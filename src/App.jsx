@@ -22,7 +22,7 @@ const CONTENT = {
   carouselSlides: [
     { src: "https://link.assetfile.io/6muQIIZf8XXrXjvFRbkIxQ/EACTS+2025.jpg", alt: "Medistim at EACTS" },
     { src: "https://link.assetfile.io/1pA3wBiAjYMXH0ywal5DNz/201910048884.jpg", alt: "Exhibition Hall" },
-    { src: "https://link.assetfile.io/5GFhfpt8XFhllau2ryA8aG/AdobeStock_495620626.jpg", alt: "Modern Trade Show" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/f_auto,q_auto/AdobeStock_495620626_maic2k", alt: "Modern Trade Show" },
   ],
 
   // Overview
