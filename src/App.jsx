@@ -15,14 +15,14 @@ const CONTENT = {
   // Hero
   heroBadge: "Version 1.0",
   heroTitle: "Exhibition & Congress Guide",
-  heroDate: "Updated October 2025",
+  heroDate: "Updated April 2026",
   heroDescription: "Unified brand experience for all events and congresses",
 
   // Hero carousel — swap src for any image URL
   carouselSlides: [
     { src: "https://link.assetfile.io/6muQIIZf8XXrXjvFRbkIxQ/EACTS+2025.jpg", alt: "Medistim at EACTS" },
     { src: "https://link.assetfile.io/1pA3wBiAjYMXH0ywal5DNz/201910048884.jpg", alt: "Exhibition Hall" },
-    { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80", alt: "Modern Trade Show" },
+    { src: "<img src="https://link.assetfile.io/6v61UUbsu57fiJzGaPGsfK/AdobeStock_495620626.jpg">", alt: "Modern Trade Show" },
   ],
 
   // Overview
