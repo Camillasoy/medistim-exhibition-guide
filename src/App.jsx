@@ -21,7 +21,7 @@ const CONTENT = {
   // Hero carousel — swap src for any image URL
   carouselSlides: [
     { src: "https://link.assetfile.io/6muQIIZf8XXrXjvFRbkIxQ/EACTS+2025.jpg", alt: "Medistim at EACTS" },
-    { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80", alt: "Exhibition Hall" },
+    { src: "https://link.assetfile.io/1pA3wBiAjYMXH0ywal5DNz/201910048884.jpg", alt: "Exhibition Hall" },
     { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80", alt: "Modern Trade Show" },
   ],
 
