@@ -15,22 +15,22 @@ const CONTENT = {
   // Hero
   heroBadge: "Version 1.0",
   heroTitle: "Exhibition & Congress Guide",
-  heroDate: "Updated April 2026",
+  heroDate: "Updated October 2025",
   heroDescription: "Unified brand experience for all events and congresses",
 
   // Hero carousel — swap src for any image URL
   carouselSlides: [
-    { src: "https://link.assetfile.io/6muQIIZf8XXrXjvFRbkIxQ/EACTS+2025.jpg", alt: "Medistim at EACTS" },
-    { src: "https://link.assetfile.io/1pA3wBiAjYMXH0ywal5DNz/201910048884.jpg", alt: "Exhibition Hall" },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/f_auto,q_auto/AdobeStock_495620626_maic2k", alt: "Modern Trade Show" },
+    { src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80", alt: "Medical Conference Booth" },
+    { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80", alt: "Exhibition Hall" },
+    { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80", alt: "Modern Trade Show" },
   ],
 
   // Overview
   overviewTitle: "Overview & Brand Principles",
-  overviewDescription: "This guide ensures that every Medistim exhibition booth, collateral, and interaction reflects a consistent brand identity. It helps all teams maintain the same visual and experiential quality at every congress.",
+  overviewDescription: "This guide ensures that every Medistim exhibition booth, collateral, and interaction reflects a consistent brand identity. It helps all teams maintain the same visual and experiential quality at every congress.\n\nNOTE: All trade shows should be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
 
   brandPrinciples: [
-    { title: "Consistency", description: "All booths should reflect the same tone, color palette, and brand hierarchy." },
+    { title: "Consistency", description: "All booths should reflect Medistim's core purpose of empowering surgeons with innovative solutions that improve surgical outcomes and patients' quality of life." },
     { title: "Clarity", description: "Spaces and materials should be minimal, functional, and easy to navigate." },
     { title: "Simplicity", description: "Every element should serve a purpose and reinforce our brand promise." },
     { title: "Human Connection", description: "Our people embody our brand—approachable, professional, and warm." },
@@ -53,7 +53,7 @@ const CONTENT = {
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
   boothCards: [
-    { src: "https://link.assetfile.io/50cZ5nDNt42FgJWcbO63xr/Mockup+Vascular+Backwall+-+1+rollup+and+1+Screen.png", alt: "Booth Front View", badge: "Vascular Booth Setup Example", badgeColor: "#F36C21", title: "Booth Perspective", description: "Primary visitor angle with visible logo placement" },
+    { src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80", alt: "Booth Front View", badge: "Vascular Congress 2025", badgeColor: "#F36C21", title: "Booth Perspective", description: "Primary visitor angle with visible logo placement" },
     { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80", alt: "Floor Plan Layout", badge: "Cardiac", badgeColor: "#250801", title: "Layout Configuration", description: "Space allocation for demo zone and meeting areas" },
     { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80", alt: "Booth Side View", badge: "Vascular Congress", badgeColor: "#F36C21", title: "Side Configuration", description: "Optimal flow and accessibility from adjacent aisles" },
     { src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80", alt: "Booth Interior View", badge: "Liver Congress 2025", badgeColor: "#250801", title: "Interior Setup", description: "Product display and visitor engagement zones" },
