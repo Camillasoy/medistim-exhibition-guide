@@ -91,7 +91,7 @@ const CONTENT = {
 
   // Print Collateral
   collateralTitle: "Print Collateral",
-  collateralDescription: "Keep layouts minimal with generous whitespace. Headlines should be short and data-supported. Use #F36C21 for key highlights only.",
+  collateralDescription: "Keep layouts minimal with generous whitespace. Headlines should be short and data-supported. Use #F36C21 for key highlights only.\n\nReduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
   collateralItems: [
     { src: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&q=80", title: "Product Brochure", description: "A4 tri-fold, 8–12 pages" },
     { src: "https://images.unsplash.com/photo-1568667256549-094345857637?w=400&q=80", title: "One-Pager", description: "A4 single sheet, quick overview" },
@@ -302,7 +302,7 @@ export default function App() {
           <nav style={{ display: "flex", gap: 28, alignItems: "center" }} className="desktop-nav">
             {c.navLinks.map((link, i) => (
               <button key={i} onClick={() => scroll(c.navIds[i])}
-                style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14, color: "#4b5563", padding: 0 }}
+                style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14, color: "#4b5563", padding: 0, fontWeight: 700 }}
                 onMouseEnter={e => e.currentTarget.style.color = O}
                 onMouseLeave={e => e.currentTarget.style.color = "#4b5563"}
               >
