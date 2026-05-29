@@ -91,7 +91,7 @@ const CONTENT = {
 
   // Print Collateral
   collateralTitle: "Print Collateral",
-  collateralDescription: "Keep layouts minimal with generous whitespace. Headlines should be short and data-supported. Use #F36C21 for key highlights only.\n\nReduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
+  collateralDescription: "\n\nReduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
   collateralItems: [
     { src: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&q=80", title: "Product Brochure", description: "A4 tri-fold, 8–12 pages" },
     { src: "https://images.unsplash.com/photo-1568667256549-094345857637?w=400&q=80", title: "One-Pager", description: "A4 single sheet, quick overview" },
