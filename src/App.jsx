@@ -102,10 +102,10 @@ const CONTENT = {
   merchandiseTitle: "Giveaways & Merchandise",
   merchandiseDescription: "All merchandise should be displayed in a tidy, non-cluttered manner. Use pen holders for pens, and arrange notebooks and microfiber cleaning cloths in neat groups of five or six. Candies or chocolates should be presented in a clean bowl—never scattered loosely.",
   merchandiseItems: [
-    { src: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=400&q=80", title: "Canvas Tote Bag", description: "Natural cotton with logo" },
-    { src: "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=400&q=80", title: "Premium Pen", description: "Medistim orange pen from Prodir" },
-    { src: "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=400&q=80", title: "Microfiber Cloth", description: "Branded cleaning cloth" },
-    { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80", title: "Mint Box", description: "Mint boxes 23 gr" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780055048/Shopper_with_Logo_rqs5ww.jpg", title: "Canvas Tote Bag", description: "Natural cotton with logo" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780054815/Medistim_Pen_tlvewq.png", title: "Premium Pen", description: "Medistim orange pen from Prodir" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780055103/15x15cm_Microfiber_cloth_and_pouch-Heart_design_qcnan3.jpg", title: "Microfiber Cloth", description: "Branded cleaning cloth" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780055145/Mints_in_orange_tin_dozhe3.png", title: "Mint Box", description: "Mint boxes 23 gr" },
   ],
   webshopUrl: "https://medistim.apogeestorefront.com/storefront/index.ep",
 
