@@ -46,14 +46,6 @@ const CONTENT = {
     { src: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=800&q=80", alt: "Booth Configuration", badge: "EACTS 2025", badgeColor: "#F36C21", title: "Booth Configuration", description: "Professional setup with clear brand visibility" },
     { src: "https://images.unsplash.com/photo-1561489401-fc2876ced162?w=800&q=80", alt: "Exhibition Layout", badge: "German Congress 2023", badgeColor: "#250801", title: "Exhibition Layout", description: "Strategic positioning for optimal visitor flow" },
   ],
-  boothRequirementsTitle: "Design Requirements",
-  boothRequirements: [
-    "Logo always visible from primary visitor angles",
-    "Color ratio: 70% white, 20% deep black, 10% Medistim orange",
-    "Include dedicated demo zone and meeting table area",
-    "Use clean, soft lighting and matte materials to avoid glare",
-  ],
-
   boothDosTitle: "Booth Presentation Standards",
   boothDos: [
     "Keep booth perimeter open",
@@ -406,22 +398,6 @@ export default function App() {
             </Card>
           ))}
         </div>
-
-        <Card>
-          <div style={{ padding: 24 }}>
-            <Editable value={c.boothRequirementsTitle} onChange={v => set("boothRequirementsTitle", v)} tag="h3"
-              style={{ fontWeight: 600, color: DARK, marginBottom: 16 }} />
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 12 }}>
-              {c.boothRequirements.map((req, i) => (
-                <li key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
-                  <span style={{ color: O, marginTop: 1, flexShrink: 0 }}>✓</span>
-                  <Editable value={req} onChange={v => setC(prev => ({ ...prev, boothRequirements: prev.boothRequirements.map((r, j) => j === i ? v : r) }))} tag="span"
-                    style={{ color: "#374151", fontSize: 14 }} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Card>
 
         {/* Do's and Don'ts */}
         <div style={{ marginTop: 24 }}>
