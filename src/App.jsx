@@ -91,11 +91,11 @@ const CONTENT = {
 
   // Print Collateral
   collateralTitle: "Print Collateral",
-  collateralDescription: "Keep layouts minimal with generous whitespace. Headlines should be short and data-supported. Use #F36C21 for key highlights only.\n\nReduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
+  collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
   collateralItems: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png", title: "Guidebooks", description: "" },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780056408/Poster_mockup_Cardiac_pkuqzo.png", title: "Poster with QR code", description: "There are several different versions of these posters available for both Cardiac, Vascular and Transplant meetings." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png", title: "Example Poster", description: "" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780056408/Poster_mockup_Cardiac_pkuqzo.png", title: "Poster with QR code", description: "" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png", title: "Poster with QR code", description: "There are several different versions of these posters available for both Cardiac, Vascular and Transplant meetings." },
   ],
 
   // Merchandise
