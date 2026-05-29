@@ -36,20 +36,6 @@ const CONTENT = {
     { title: "Human Connection", description: "Our people embody our brand—approachable, professional, and warm." },
   ],
 
-  colorPaletteTitle: "Brand Color Palette",
-  colorPaletteDescription: "The primary colors define the visual identity of Medistim. Orange 500 is the characteristic brand driver. Used with generous white space it gives an overall bright appearance. The darker orange 950 is used to accentuate and emotionalize.",
-
-  colorPalette: [
-    { name: "White", value: "#FFFFFF", percentage: "70%" },
-    { name: "Deep Black", value: "#250801", percentage: "20%" },
-    { name: "Medistim Orange", value: "#F36C21", percentage: "10%" },
-  ],
-
-  colorGuideTitle: "Complete Color Guide",
-  colorGuideDescription: "Access the full Medistim color system, including gradients, tints, and accessibility guidelines.",
-  colorGuideButton: "View in Frontify",
-  colorGuideUrl: "https://frontify.com",
-
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
   boothCards: [
@@ -66,6 +52,22 @@ const CONTENT = {
     "Color ratio: 70% white, 20% deep black, 10% Medistim orange",
     "Include dedicated demo zone and meeting table area",
     "Use clean, soft lighting and matte materials to avoid glare",
+  ],
+
+  boothDosTitle: "Booth Presentation Standards",
+  boothDos: [
+    "Keep booth perimeter open",
+    "Hide boxes, coats, suitcases and packaging",
+    "Store giveaways in closed cabinets",
+    "Keep counters clear except approved materials",
+    "Keep screens synchronized with approved content",
+  ],
+  boothDonts: [
+    "Use tablecloths",
+    "Display handwritten signs",
+    "Leave cables visible",
+    "Eat at the booth",
+    "Store personal belongings in visitor view",
   ],
 
   // Visual Elements
@@ -377,41 +379,6 @@ export default function App() {
           ))}
         </div>
 
-        {/* Color palette */}
-        <Card>
-          <div style={{ padding: 28 }}>
-            <Editable value={c.colorPaletteTitle} onChange={v => set("colorPaletteTitle", v)} tag="h3"
-              style={{ fontWeight: 600, marginBottom: 8, color: DARK }} />
-            <Editable value={c.colorPaletteDescription} onChange={v => set("colorPaletteDescription", v)} tag="p"
-              style={{ fontSize: 14, color: "#6b7280", marginBottom: 24 }} multiline />
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
-              {c.colorPalette.map((col, i) => (
-                <div key={i} style={{ textAlign: "center" }}>
-                  <div style={{ width: "100%", height: 80, background: col.value, borderRadius: 8, border: "1px solid #e5e7eb", marginBottom: 10 }} />
-                  <div style={{ fontSize: 14, fontWeight: 500, color: DARK }}>{col.name}</div>
-                  <div style={{ fontSize: 12, color: "#9ca3af" }}>{col.value}</div>
-                  <span style={{ display: "inline-block", marginTop: 6, border: "1px solid #e5e7eb", borderRadius: 12, padding: "2px 10px", fontSize: 12, color: "#374151" }}>{col.percentage}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Card>
-
-        {/* Frontify link */}
-        <Card style={{ marginTop: 20 }}>
-          <div style={{ padding: 24, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, flexWrap: "wrap" }}>
-            <div>
-              <Editable value={c.colorGuideTitle} onChange={v => set("colorGuideTitle", v)} tag="h4"
-                style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-              <Editable value={c.colorGuideDescription} onChange={v => set("colorGuideDescription", v)} tag="p"
-                style={{ fontSize: 14, color: "#6b7280" }} />
-            </div>
-            <a href={c.colorGuideUrl} target="_blank" rel="noopener noreferrer"
-              style={{ background: O, color: "#fff", border: "none", borderRadius: 8, padding: "10px 20px", fontSize: 14, fontWeight: 500, cursor: "pointer", textDecoration: "none", whiteSpace: "nowrap" }}>
-              {c.colorGuideButton}
-            </a>
-          </div>
-        </Card>
       </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
@@ -455,6 +422,54 @@ export default function App() {
             </ul>
           </div>
         </Card>
+
+        {/* Do's and Don'ts */}
+        <div style={{ marginTop: 24 }}>
+          <Editable value={c.boothDosTitle} onChange={v => set("boothDosTitle", v)} tag="h3"
+            style={{ fontSize: 20, fontWeight: 700, color: DARK, marginBottom: 16 }} />
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+            {/* Do */}
+            <Card>
+              <div style={{ padding: 24 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
+                  <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#22c55e", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <span style={{ color: "#fff", fontSize: 14, fontWeight: 700 }}>✓</span>
+                  </div>
+                  <span style={{ fontWeight: 700, fontSize: 16, color: "#22c55e" }}>Do</span>
+                </div>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+                  {c.boothDos.map((item, i) => (
+                    <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                      <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#22c55e", marginTop: 7, flexShrink: 0 }} />
+                      <Editable value={item} onChange={v => setC(prev => ({ ...prev, boothDos: prev.boothDos.map((x, j) => j === i ? v : x) }))} tag="span"
+                        style={{ fontSize: 14, color: "#374151" }} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Card>
+            {/* Don't */}
+            <Card>
+              <div style={{ padding: 24 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
+                  <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#ef4444", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <span style={{ color: "#fff", fontSize: 14, fontWeight: 700 }}>✕</span>
+                  </div>
+                  <span style={{ fontWeight: 700, fontSize: 16, color: "#ef4444" }}>Don't</span>
+                </div>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+                  {c.boothDonts.map((item, i) => (
+                    <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                      <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#ef4444", marginTop: 7, flexShrink: 0 }} />
+                      <Editable value={item} onChange={v => setC(prev => ({ ...prev, boothDonts: prev.boothDonts.map((x, j) => j === i ? v : x) }))} tag="span"
+                        style={{ fontSize: 14, color: "#374151" }} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Card>
+          </div>
+        </div>
       </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
