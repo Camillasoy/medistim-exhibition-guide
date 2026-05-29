@@ -37,7 +37,7 @@ const CONTENT = {
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
   boothCards: [
-    { src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80", alt: "Booth Front View", badge: "Vascular Congress 2025", badgeColor: "#F36C21", title: "Booth Perspective", description: "Primary visitor angle with visible logo placement" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#F36C21", title: "Vascular Congress 2026", description: "A shell scheme booth 3x2m with the eye graphic" },
     { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80", alt: "Floor Plan Layout", badge: "Cardiac", badgeColor: "#250801", title: "Layout Configuration", description: "Space allocation for demo zone and meeting areas" },
     { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80", alt: "Booth Side View", badge: "Vascular Congress", badgeColor: "#F36C21", title: "Side Configuration", description: "Optimal flow and accessibility from adjacent aisles" },
     { src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80", alt: "Booth Interior View", badge: "Liver Congress 2025", badgeColor: "#250801", title: "Interior Setup", description: "Product display and visitor engagement zones" },
