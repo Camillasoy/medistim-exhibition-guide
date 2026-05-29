@@ -20,9 +20,9 @@ const CONTENT = {
 
   // Hero carousel — swap src for any image URL
   carouselSlides: [
-    { src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80", alt: "Medical Conference Booth" },
-    { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80", alt: "Exhibition Hall" },
-    { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80", alt: "Modern Trade Show" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780058868/P1130923_njgsfc.jpg", alt: "Medical Conference Booth" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780058218/EACTS_2025_esucie.jpg", alt: "Exhibition Hall" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1776683376/AdobeStock_495620626_maic2k.jpg", alt: "Modern Trade Show" },
   ],
 
   // Overview
