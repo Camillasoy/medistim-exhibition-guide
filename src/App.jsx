@@ -26,15 +26,13 @@ const CONTENT = {
   ],
 
   // Overview
-  overviewTitle: "Overview & Brand Principles",
-  overviewDescription: "This guide ensures that every Medistim exhibition booth, collateral, and interaction reflects a consistent brand identity. It helps all teams maintain the same visual and experiential quality at every congress.\n\nNOTE: All trade shows should be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
+  section1Title: "Exhibition Objectives",
+  section1Description: "Our presence at congresses and exhibitions is an extension of the Medistim brand. Consistent booth design, messaging, and presentation help create a professional and recognizable experience across all events, reinforcing who we are and the value we bring to surgeons and healthcare providers.",
 
-  brandPrinciples: [
-    { title: "Consistency", description: "All booths should reflect Medistim's core purpose of empowering surgeons with innovative solutions that improve surgical outcomes and patients' quality of life." },
-    { title: "Clarity", description: "Spaces and materials should be minimal, functional, and easy to navigate." },
-    { title: "Simplicity", description: "Every element should serve a purpose and reinforce our brand promise." },
-    { title: "Human Connection", description: "Our people embody our brand—approachable, professional, and warm." },
-  ],
+  section2Title: "Objectives of the Booth",
+  section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage in meaningful discussions with our team. Product demonstrations, clinical evidence, and educational materials should be presented in a clear and accessible manner, enabling visitors to understand how Medistim supports improved surgical quality and patient outcomes.",
+
+  overviewNote: "NOTE: All trade shows should be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
 
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
@@ -349,28 +347,20 @@ export default function App() {
 
       {/* ── OVERVIEW ── */}
       <Section id="overview">
-        <Editable value={c.overviewTitle} onChange={v => set("overviewTitle", v)} tag="h2"
-          style={{ fontSize: 28, fontWeight: 700, marginBottom: 12 }} />
-        <Editable value={c.overviewDescription} onChange={v => set("overviewDescription", v)} tag="p"
-          style={{ color: "#6b7280", maxWidth: 720, marginBottom: 40 }} multiline />
+        <Editable value={c.section1Title} onChange={v => set("section1Title", v)} tag="h2"
+          style={{ fontSize: 28, fontWeight: 700, marginBottom: 12, color: DARK }} />
+        <Editable value={c.section1Description} onChange={v => set("section1Description", v)} tag="p"
+          style={{ color: "#6b7280", maxWidth: 720, marginBottom: 40, lineHeight: 1.7 }} multiline />
 
-        {/* Brand Principles */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20, marginBottom: 40 }}>
-          {c.brandPrinciples.map((p, i) => (
-            <Card key={i}>
-              <div style={{ padding: 24 }}>
-                <div style={{ width: 32, height: 32, background: O, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 12 }}>
-                  <span style={{ color: "#fff", fontSize: 16 }}>✓</span>
-                </div>
-                <Editable value={p.title} onChange={v => setArr("brandPrinciples", i, "title", v)} tag="h4"
-                  style={{ fontWeight: 600, marginBottom: 6, color: DARK }} />
-                <Editable value={p.description} onChange={v => setArr("brandPrinciples", i, "description", v)} tag="p"
-                  style={{ fontSize: 14, color: "#6b7280", lineHeight: 1.6 }} multiline />
-              </div>
-            </Card>
-          ))}
+        <Editable value={c.section2Title} onChange={v => set("section2Title", v)} tag="h2"
+          style={{ fontSize: 28, fontWeight: 700, marginBottom: 12, color: DARK }} />
+        <Editable value={c.section2Description} onChange={v => set("section2Description", v)} tag="p"
+          style={{ color: "#6b7280", maxWidth: 720, marginBottom: 40, lineHeight: 1.7 }} multiline />
+
+        <div style={{ background: "#fff8f4", border: "1px solid #F36C21", borderRadius: 10, padding: "16px 20px" }}>
+          <Editable value={c.overviewNote} onChange={v => set("overviewNote", v)} tag="p"
+            style={{ fontSize: 14, color: DARK, fontWeight: 500, margin: 0 }} multiline />
         </div>
-
       </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
