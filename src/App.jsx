@@ -67,7 +67,7 @@ const CONTENT = {
   verticalBannerTitle: "Marketing Material poster with QR code",
   verticalBannerDescription: "2m × 0.8m roll-up banner",
   verticalBannerText: "Position on counters",
-  verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png0",
+  verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
   horizontalBannerTitle: "Horizontal Banner",
   horizontalBannerDescription: "1m × 3m backdrop banner",
