@@ -37,12 +37,12 @@ const CONTENT = {
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
   boothCards: [
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#1e6765", title: "Vascular Congress 2026", description: "A shell scheme booth 3x2m with the eye graphic. This also includes the leg" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#1e6765", title: "Vascular Congress 2026", description: "A shell scheme booth 3x2m with the eye graphic backwall. This is from the Charing Cross CX meeting where the leg was used to demonstrate flow." },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563679/Mockup_Vascular_Backwall_and_2_rollups-for_VAM_pybdnl.png", alt: "Floor Plan Layout", badge: "Vascular", badgeColor: "#1e6765", title: "Layout example", description: "This example features two rollups alongside the large backwall. For a smaller booth footprint, a setup with two rollups and a counter is also recommended." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571081/Mockup_2_Rollups_Vascular_-_Medium_wylb0c.png", alt: "Booth Side View", badge: "Vascular", badgeColor: "#1e6765", title: "Two rollups", description: "For the smallest booth sizes and tabletop exhibits, two banners with a counter is the suggeste setup" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571081/Mockup_2_Rollups_Vascular_-_Medium_wylb0c.png", alt: "Booth Side View", badge: "Vascular", badgeColor: "#1e6765", title: "Two rollups", description: "Vascular rollups for use in small booths or tabletop exhibits. It is recommended to use a counter with the Medistim logo together with this setup." },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780560015/PHOTO-Cardiac_booth_example_diipsl.jpg", alt: "Cardiac Congress 2025", badge: "Cardiac Congress 2025", badgeColor: "#f36c21", title: "Cardiac Congress 2025", description: "Island booth 3x2 with the Heart graphic, this is from ISMICS in Turkey 2025" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563779/Mockup_Cardiac_Backwall_-_1_rollup_and_1_Screen_fxkmiq.png", alt: "Booth Configuration", badge: "Cardiac", badgeColor: "#F36C21", title: "Layout example", description: "This example features 1 rollup and a screen with a video loop." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571082/Mockup_2_Rollups_Cardiac_-_Medium_dnfdyx.png", alt: "Exhibition Layout", badge: "Cardiac", badgeColor: "#f36c21", title: "Two rollups layout", description: "Here is an example of the use of 2 rollups for small spaces" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571082/Mockup_2_Rollups_Cardiac_-_Medium_dnfdyx.png", alt: "Exhibition Layout", badge: "Cardiac", badgeColor: "#f36c21", title: "Two rollups layout", description: "Cardiac rollups for use in small spaces, we recommend using a counter with the Medistim logo together with this setup." },
   ],
   boothDosTitle: "Booth Presentation Standards",
   boothDos: [
@@ -69,9 +69,9 @@ const CONTENT = {
   verticalBannerText: "Position on counters",
   verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
-  horizontalBannerTitle: "Horizontal Banner",
+  horizontalBannerTitle: "Vertical INTUI Posters",
   horizontalBannerDescription: "1m × 3m backdrop banner",
-  horizontalBannerText: "Main backdrop for booth wall",
+  horizontalBannerText: "The posters can be custommade, contact Marketing for info.",
 
   digitalScreenTitle: "Digital Screen Layouts",
   digitalScreenDescription: "16:9 screen format for product demos and presentations",
