@@ -105,8 +105,8 @@ const CONTENT = {
   webshopUrl: "https://medistim.apogeestorefront.com/storefront/index.ep",
 
   // Team
-  teamTitle: "Team Presentation",
-  teamDescription: "Team members should embody Medistim's brand values: precision, empathy, and professionalism. Use calm tones and open body language when engaging visitors.",
+  teamTitle: "Example of a Strong Congress Presence (ESVS 2025)",
+  teamDescription: "This booth setup demonstrates how an open, uncluttered design can create an inviting and professional exhibition presence, as shown in this video from ESVS 2025.",
   teamImageSrc: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80",
 
   engagementTitle: "Visitor Engagement",
