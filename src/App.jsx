@@ -13,10 +13,10 @@ const CONTENT = {
   navIds:   ["overview", "booth",        "collateral", "visual",          "merchandise", "team",  "checklist"],
 
   // Hero
-  heroBadge: "Version 1.0.0",
-  heroTitle: "Medistim Exhibition & Congress Guide",
-  heroDate: "Updated June 2026",
-  heroDescription: "For a unified Medistim brand experience for all events and congresses",
+  heroBadge: "Version 1.0",
+  heroTitle: "Exhibition & Congress Guide",
+  heroDate: "Updated October 2025",
+  heroDescription: "Unified brand experience for all events and congresses",
 
   // Hero carousel — swap src for any image URL
   carouselSlides: [
@@ -27,12 +27,12 @@ const CONTENT = {
 
   // Overview
   section1Title: "Exhibition Objectives",
-  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand, expertise, and market leadership. The quality of our preparation and the professionalism of our presence send a clear message about who we are as a company. Consistent booth design, messaging, materials, and presentation ensure that every event delivers a recognizable and high-quality brand experience. By holding ourselves to the same standards at every congress and exhibition, we strengthen our reputation, build confidence in our products and solutions, and reinforce Medistim's position as a trusted partner for surgeons and healthcare providers worldwide.",
+  section1Description: "Our presence at congresses and exhibitions is an extension of the Medistim brand. Consistent booth design, messaging, and presentation help create a professional and recognizable experience across all events, reinforcing who we are and the value we bring to surgeons and healthcare providers.",
 
   section2Title: "Objectives of the Booth",
   section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage in meaningful discussions with our team. Product demonstrations, clinical evidence, and educational materials should be presented in a clear and accessible manner, enabling visitors to understand how Medistim supports improved surgical quality and patient outcomes.",
 
-  overviewNote: "NOTE: All exhibition designs must be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
+  overviewNote: "NOTE: All trade shows should be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
 
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
@@ -61,17 +61,17 @@ const CONTENT = {
   ],
 
   // Visual Elements
-  visualTitle: "Other Visual Elements",
-  visualDescription: "Here are examples of other visual elements for use at Medistim's booths.",
+  visualTitle: "Visual Elements",
+  visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
 
-  verticalBannerTitle: "QR code Poster for Marketing Material",
-  verticalBannerDescription: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded..",
-  verticalBannerText: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop",
+  verticalBannerTitle: "Marketing Material poster with QR code",
+  verticalBannerDescription: "2m × 0.8m roll-up banner",
+  verticalBannerText: "Position on counters",
   verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
-  horizontalBannerTitle: "Example of INTUI Campaign Posters",
-  horizontalBannerDescription: "These are also available in A3 size and include a built-in easel back for easy display.",
-  horizontalBannerText: "The posters can be customized with QR codes linked to specific URLs. Contact Marketing for more information.",
+  horizontalBannerTitle: "Vertical INTUI Posters",
+  horizontalBannerDescription: "1m × 3m backdrop banner",
+  horizontalBannerText: "The posters can be custommade, contact Marketing for info.",
   horizontalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
 
   digitalScreenTitle: "Digital Screen Layouts",
@@ -86,7 +86,7 @@ const CONTENT = {
 
   // Print Collateral
   collateralTitle: "Print Collateral",
-  collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters (see below) should be used to give visitors easy access to all supporting materials.",
+  collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
   collateralItems: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png", title: "Guidebooks", description: "" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png", title: "Other Posters", description: "Example of INTUI promotion posters" },
@@ -480,7 +480,7 @@ export default function App() {
 
         {/* Tabs */}
         <div style={{ borderBottom: "1px solid #e5e7eb", marginBottom: 28, display: "flex", gap: 0 }}>
-          {[["banners", "Posters"], ["digital", "Digital Screens"]].map(([key, label]) => (
+          {[["banners", "Banners"], ["digital", "Digital Screens"]].map(([key, label]) => (
             <button key={key} onClick={() => setActiveTab(key)}
               style={{ padding: "10px 20px", border: "none", background: "none", cursor: "pointer", fontSize: 14, fontWeight: activeTab === key ? 600 : 400, color: activeTab === key ? O : "#6b7280", borderBottom: activeTab === key ? `2px solid ${O}` : "2px solid transparent", marginBottom: -1, transition: "all 0.15s" }}>
               {label}
@@ -596,7 +596,11 @@ export default function App() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 340px", gap: 24 }} className="team-grid">
           <Card>
             <div style={{ aspectRatio: "16/9", overflow: "hidden" }}>
-              <img src={c.teamImageSrc} alt="Team" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <video
+                src="https://res.cloudinary.com/dranffioe/video/upload/v1780577323/ESVS_day_2_9x16_azznqr.mp4"
+                autoPlay loop muted playsInline
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
             </div>
             <div style={{ padding: 24 }}>
               <Editable value={c.engagementTitle} onChange={v => set("engagementTitle", v)} tag="h4"
