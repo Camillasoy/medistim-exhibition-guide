@@ -13,10 +13,10 @@ const CONTENT = {
   navIds:   ["overview", "booth",        "collateral", "visual",          "merchandise", "team",  "checklist"],
 
   // Hero
-  heroBadge: "Version 1.0",
-  heroTitle: "Exhibition & Congress Guide",
+  heroBadge: "Version 1.0.0",
+  heroTitle: "Medistim Exhibition & Congress Guide",
   heroDate: "Updated June 2026",
-  heroDescription: "Unified brand experience for all events and congresses",
+  heroDescription: "For a unified Medistim brand experience for all events and congresses",
 
   // Hero carousel — swap src for any image URL
   carouselSlides: [
@@ -27,12 +27,12 @@ const CONTENT = {
 
   // Overview
   section1Title: "Exhibition Objectives",
-  section1Description: "Our presence at congresses and exhibitions is an extension of the Medistim brand. Consistent booth design, messaging, and presentation help create a professional and recognizable experience across all events, reinforcing who we are and the value we bring to surgeons and healthcare providers.",
+  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand, expertise, and market leadership. The quality of our preparation and the professionalism of our presence send a clear message about who we are as a company. Consistent booth design, messaging, materials, and presentation ensure that every event delivers a recognizable and high-quality brand experience. By holding ourselves to the same standards at every congress and exhibition, we strengthen our reputation, build confidence in our products and solutions, and reinforce Medistim's position as a trusted partner for surgeons and healthcare providers worldwide.",
 
   section2Title: "Objectives of the Booth",
   section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage in meaningful discussions with our team. Product demonstrations, clinical evidence, and educational materials should be presented in a clear and accessible manner, enabling visitors to understand how Medistim supports improved surgical quality and patient outcomes.",
 
-  overviewNote: "NOTE: All trade shows should be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
+  overviewNote: "NOTE: All exhibition designs must be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
 
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
