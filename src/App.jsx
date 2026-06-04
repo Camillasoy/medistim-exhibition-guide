@@ -63,16 +63,16 @@ const CONTENT = {
   // Visual Elements
   visualTitle: "Visual Elements",
   visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
-  postersDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop.",
+  postersDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
 
   verticalBannerTitle: "Marketing Material poster with QR code",
-  verticalBannerDescription: "2m × 0.8m roll-up banner",
-  verticalBannerText: "The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
+  verticalBannerDescription: "",
+  verticalBannerText: "",
   verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
   horizontalBannerTitle: "Vertical INTUI Posters",
-  horizontalBannerDescription: "1m × 3m backdrop banner",
-  horizontalBannerText: "The posters can be custommade, contact Marketing for info.",
+  horizontalBannerDescription: "",
+  horizontalBannerText: "",
   horizontalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
 
   digitalScreenTitle: "Digital Screen Layouts",
