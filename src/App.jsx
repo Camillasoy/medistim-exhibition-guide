@@ -83,10 +83,6 @@ const CONTENT = {
     "Auto-loop content every 60–90 seconds",
   ],
 
-  signageTitle: "Directional Signage",
-  signageDescription: "Clear wayfinding for booth zones",
-  signageLabels: ["Demo Area", "Meeting Space", "Information"],
-
   // Print Collateral
   collateralTitle: "Print Collateral",
   collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
@@ -483,7 +479,7 @@ export default function App() {
 
         {/* Tabs */}
         <div style={{ borderBottom: "1px solid #e5e7eb", marginBottom: 28, display: "flex", gap: 0 }}>
-          {[["banners", "Banners"], ["digital", "Digital Screens"], ["signage", "Signage"]].map(([key, label]) => (
+          {[["banners", "Banners"], ["digital", "Digital Screens"]].map(([key, label]) => (
             <button key={key} onClick={() => setActiveTab(key)}
               style={{ padding: "10px 20px", border: "none", background: "none", cursor: "pointer", fontSize: 14, fontWeight: activeTab === key ? 600 : 400, color: activeTab === key ? O : "#6b7280", borderBottom: activeTab === key ? `2px solid ${O}` : "2px solid transparent", marginBottom: -1, transition: "all 0.15s" }}>
               {label}
@@ -558,25 +554,6 @@ export default function App() {
           </Card>
         )}
 
-        {activeTab === "signage" && (
-          <Card>
-            <div style={{ padding: 24 }}>
-              <Editable value={c.signageTitle} onChange={v => set("signageTitle", v)} tag="h3"
-                style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-              <Editable value={c.signageDescription} onChange={v => set("signageDescription", v)} tag="p"
-                style={{ fontSize: 13, color: "#6b7280", marginBottom: 20 }} />
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
-                {c.signageLabels.map((label, i) => (
-                  <div key={i} style={{ background: "#f9fafb", border: "1px solid #e5e7eb", borderRadius: 10, padding: 20, textAlign: "center" }}>
-                    <div style={{ width: 32, height: 32, background: O, borderRadius: 6, margin: "0 auto 10px" }} />
-                    <Editable value={label} onChange={v => setC(prev => ({ ...prev, signageLabels: prev.signageLabels.map((l, j) => j === i ? v : l) }))} tag="p"
-                      style={{ fontSize: 13, color: DARK, fontWeight: 500 }} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Card>
-        )}
       </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
