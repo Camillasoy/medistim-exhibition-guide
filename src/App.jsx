@@ -37,7 +37,7 @@ const CONTENT = {
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
   boothCards: [
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#F36C21", title: "Vascular Congress 2026", description: "A shell scheme booth 3x2m with the eye graphic. This also includes the "Leg"" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#F36C21", title: "Vascular Congress 2026", description: "A shell scheme booth 3x2m with the eye graphic. This also includes the leg" },
     { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80", alt: "Floor Plan Layout", badge: "Vascular", badgeColor: "#250801", title: "Layout example", description: "This example features two rollups alongside the large backwall. For a smaller booth footprint, a setup with two rollups and a counter is also recommended." },
     { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80", alt: "Booth Side View", badge: "Vascular Congress", badgeColor: "#F36C21", title: "Side Configuration", description: "Optimal flow and accessibility from adjacent aisles" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780560015/PHOTO-Cardiac_booth_example_diipsl.jpg", alt: "Cardiac Congress Booth", badge: "Cardiac Congress", badgeColor: "#250801", title: "Cardiac Congress", description: "Island booth 3x2 with the Heart graphic" },
