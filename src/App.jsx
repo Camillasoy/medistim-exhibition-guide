@@ -9,8 +9,8 @@ const CONTENT = {
   headerSubtitle: "Exhibition & Congress Guide",
 
   // Navigation
-  navLinks: ["Overview", "Booth Design", "Visual Elements", "Collateral", "Merchandise", "Team", "Checklist"],
-  navIds:   ["overview", "booth",        "visual",           "collateral", "merchandise", "team",  "checklist"],
+  navLinks: ["Overview", "Booth Design", "Collateral", "Visual Elements", "Merchandise", "Team", "Checklist"],
+  navIds:   ["overview", "booth",        "collateral", "visual",          "merchandise", "team",  "checklist"],
 
   // Hero
   heroBadge: "Version 1.0",
@@ -440,6 +440,40 @@ export default function App() {
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
 
+      {/* ── COLLATERAL ── */}
+      <Section id="collateral" bg="#f9fafb">
+        <Editable value={c.collateralTitle} onChange={v => set("collateralTitle", v)} tag="h2"
+          style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }} />
+        <Editable value={c.collateralDescription} onChange={v => set("collateralDescription", v)} tag="p"
+          style={{ color: "#6b7280", marginBottom: 32, maxWidth: 680 }} multiline />
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
+          {c.collateralItems.map((item, i) => (
+            <Card key={i}>
+              <div style={{ aspectRatio: "1/1.4", overflow: "hidden", background: "#f3f4f6" }}>
+                <img src={item.src} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px" }}>
+                <Editable value={item.title} onChange={v => setArr("collateralItems", i, "title", v)} tag="h4"
+                  style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
+                <Editable value={item.description} onChange={v => setArr("collateralItems", i, "description", v)} tag="p"
+                  style={{ fontSize: 13, color: "#6b7280" }} />
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        <div style={{ textAlign: "center", marginTop: 32 }}>
+          <a href="https://medistim.dash.app/browse/panels?keywords=&from=0&sort=DOWNLOAD_COUNT:DESC&browse-filter-f15b56f0-7fb2-41c1-81e9-d7430fdbbb34=733c2399-28a3-4e76-b4f7-97ca8e9f1851&withAi=true"
+            target="_blank" rel="noopener noreferrer"
+            style={{ display: "inline-block", background: O, color: "#fff", borderRadius: 8, padding: "12px 28px", fontSize: 14, fontWeight: 500, textDecoration: "none" }}>
+            Browse Print Materials
+          </a>
+        </div>
+      </Section>
+
+      <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
+
       {/* ── VISUAL ELEMENTS ── */}
       <Section id="visual">
         <Editable value={c.visualTitle} onChange={v => set("visualTitle", v)} tag="h2"
@@ -543,40 +577,6 @@ export default function App() {
             </div>
           </Card>
         )}
-      </Section>
-
-      <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
-
-      {/* ── COLLATERAL ── */}
-      <Section id="collateral" bg="#f9fafb">
-        <Editable value={c.collateralTitle} onChange={v => set("collateralTitle", v)} tag="h2"
-          style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }} />
-        <Editable value={c.collateralDescription} onChange={v => set("collateralDescription", v)} tag="p"
-          style={{ color: "#6b7280", marginBottom: 32, maxWidth: 680 }} multiline />
-
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
-          {c.collateralItems.map((item, i) => (
-            <Card key={i}>
-              <div style={{ aspectRatio: "1/1.4", overflow: "hidden", background: "#f3f4f6" }}>
-                <img src={item.src} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
-              <div style={{ padding: "14px 16px" }}>
-                <Editable value={item.title} onChange={v => setArr("collateralItems", i, "title", v)} tag="h4"
-                  style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-                <Editable value={item.description} onChange={v => setArr("collateralItems", i, "description", v)} tag="p"
-                  style={{ fontSize: 13, color: "#6b7280" }} />
-              </div>
-            </Card>
-          ))}
-        </div>
-
-        <div style={{ textAlign: "center", marginTop: 32 }}>
-          <a href="https://medistim.dash.app/browse/panels?keywords=&from=0&sort=DOWNLOAD_COUNT:DESC&browse-filter-f15b56f0-7fb2-41c1-81e9-d7430fdbbb34=733c2399-28a3-4e76-b4f7-97ca8e9f1851&withAi=true"
-            target="_blank" rel="noopener noreferrer"
-            style={{ display: "inline-block", background: O, color: "#fff", borderRadius: 8, padding: "12px 28px", fontSize: 14, fontWeight: 500, textDecoration: "none" }}>
-            Browse Print Materials
-          </a>
-        </div>
       </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
