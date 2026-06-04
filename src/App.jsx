@@ -15,7 +15,7 @@ const CONTENT = {
   // Hero
   heroBadge: "Version 1.0",
   heroTitle: "Exhibition & Congress Guide",
-  heroDate: "Updated October 2025",
+  heroDate: "Updated June 2026",
   heroDescription: "Unified brand experience for all events and congresses",
 
   // Hero carousel — swap src for any image URL
@@ -61,17 +61,17 @@ const CONTENT = {
   ],
 
   // Visual Elements
-  visualTitle: "Visual Elements",
-  visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
+  visualTitle: "Other Visual Elements",
+  visualDescription: "Here are examples of other visual elements for use at Medistim's booths.",
 
   verticalBannerTitle: "Marketing Material poster with QR code",
-  verticalBannerDescription: "2m × 0.8m roll-up banner",
-  verticalBannerText: "Position on counters",
+  verticalBannerDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop.",
+  verticalBannerText: "Illustrated here using Cardiac materials",
   verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
   horizontalBannerTitle: "Vertical INTUI Posters",
-  horizontalBannerDescription: "1m × 3m backdrop banner",
-  horizontalBannerText: "The posters can be custommade, contact Marketing for info.",
+  horizontalBannerDescription: "These are also available in A3 size and include a built-in easel back for easy display.",
+  horizontalBannerText: "The posters can be customized with QR codes linked to specific URLs. Contact Marketing for more information.",
   horizontalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
 
   digitalScreenTitle: "Digital Screen Layouts",
@@ -86,7 +86,7 @@ const CONTENT = {
 
   // Print Collateral
   collateralTitle: "Print Collateral",
-  collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
+  collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters (see below) should be used to give visitors easy access to all supporting materials.",
   collateralItems: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png", title: "Guidebooks", description: "" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png", title: "Other Posters", description: "Example of INTUI promotion posters" },
