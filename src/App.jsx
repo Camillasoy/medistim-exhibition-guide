@@ -480,7 +480,7 @@ export default function App() {
 
         {/* Tabs */}
         <div style={{ borderBottom: "1px solid #e5e7eb", marginBottom: 28, display: "flex", gap: 0 }}>
-          {[["banners", "Banners"], ["digital", "Digital Screens"]].map(([key, label]) => (
+          {[["banners", "Posters"], ["digital", "Digital Screens"]].map(([key, label]) => (
             <button key={key} onClick={() => setActiveTab(key)}
               style={{ padding: "10px 20px", border: "none", background: "none", cursor: "pointer", fontSize: 14, fontWeight: activeTab === key ? 600 : 400, color: activeTab === key ? O : "#6b7280", borderBottom: activeTab === key ? `2px solid ${O}` : "2px solid transparent", marginBottom: -1, transition: "all 0.15s" }}>
               {label}
