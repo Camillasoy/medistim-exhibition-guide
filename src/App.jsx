@@ -72,6 +72,7 @@ const CONTENT = {
   horizontalBannerTitle: "Vertical INTUI Posters",
   horizontalBannerDescription: "1m × 3m backdrop banner",
   horizontalBannerText: "The posters can be custommade, contact Marketing for info.",
+  horizontalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
 
   digitalScreenTitle: "Digital Screen Layouts",
   digitalScreenDescription: "16:9 screen format for product demos and presentations",
@@ -506,13 +507,7 @@ export default function App() {
                   style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
                 <Editable value={c.horizontalBannerDescription} onChange={v => set("horizontalBannerDescription", v)} tag="p"
                   style={{ fontSize: 13, color: "#6b7280", marginBottom: 16 }} />
-                <div style={{ aspectRatio: "3/1", background: "#f3f4f6", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", gap: 16, padding: 20, marginBottom: 12 }}>
-                  <div style={{ width: 44, height: 44, background: O, borderRadius: 6, flexShrink: 0 }} />
-                  <div>
-                    <div style={{ fontSize: 13, color: "#374151" }}>Horizontal Layout</div>
-                    <div style={{ fontSize: 12, color: "#9ca3af" }}>Logo left, content right</div>
-                  </div>
-                </div>
+                <img src={c.horizontalBannerSrc} alt="Vertical INTUI Posters" style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
                 <Editable value={c.horizontalBannerText} onChange={v => set("horizontalBannerText", v)} tag="p"
                   style={{ fontSize: 13, color: "#6b7280" }} />
               </div>
