@@ -13,10 +13,10 @@ const CONTENT = {
   navIds:   ["overview", "booth",        "collateral", "visual",          "merchandise", "team",  "checklist"],
 
   // Hero
-  heroBadge: "Version 1.0",
-  heroTitle: "Exhibition & Congress Guide",
-  heroDate: "Updated October 2025",
-  heroDescription: "Unified brand experience for all events and congresses",
+  heroBadge: "Version 1.0.0",
+  heroTitle: "Medistim Exhibition & Congress Guide",
+  heroDate: "Updated June 2026",
+  heroDescription: "This Guide aims to ensure a unified Medistim brand experience for all events and congresses",
 
   // Hero carousel — swap src for any image URL
   carouselSlides: [
@@ -105,8 +105,8 @@ const CONTENT = {
   webshopUrl: "https://medistim.apogeestorefront.com/storefront/index.ep",
 
   // Team
-  teamTitle: "Example of a Strong Congress Presence (ESVS 2025)",
-  teamDescription: "This booth setup demonstrates how an open, uncluttered design can create an inviting and professional exhibition presence, as shown in this video from ESVS 2025.",
+  teamTitle: "Team Presentation",
+  teamDescription: "Team members should embody Medistim's brand values: precision, empathy, and professionalism. Use calm tones and open body language when engaging visitors.",
   teamImageSrc: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80",
 
   engagementTitle: "Visitor Engagement",
