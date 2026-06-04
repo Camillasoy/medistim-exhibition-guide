@@ -38,10 +38,10 @@ const CONTENT = {
   boothTitle: "Examples of Booth Designs and Layout",
   boothCards: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#F36C21", title: "Vascular Congress 2026", description: "A shell scheme booth 3x2m with the eye graphic" },
-    { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80", alt: "Floor Plan Layout", badge: "Cardiac", badgeColor: "#250801", title: "Layout Configuration", description: "Space allocation for demo zone and meeting areas" },
+    { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80", alt: "Floor Plan Layout", badge: "Cardiac", badgeColor: "#250801", title: "Layout example", description: "This example features two rollups alongside the large backwall. For a smaller booth footprint, a setup with two rollups and a counter is also recommended." },
     { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80", alt: "Booth Side View", badge: "Vascular Congress", badgeColor: "#F36C21", title: "Side Configuration", description: "Optimal flow and accessibility from adjacent aisles" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780560015/PHOTO-Cardiac_booth_example_diipsl.jpg", alt: "Cardiac Congress Booth", badge: "Cardiac Congress", badgeColor: "#250801", title: "Cardiac Congress", description: "Island booth 3x2 with the Heart graphic" },
-    { src: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=800&q=80", alt: "Booth Configuration", badge: "EACTS 2025", badgeColor: "#F36C21", title: "Booth Configuration", description: "Professional setup with clear brand visibility" },
+    { src: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=800&q=80", alt: "Booth Configuration", badge: "EACTS 2025", badgeColor: "#F36C21", title: "Layout example", description: "This example features 1 rollup and a screen with a video loop." },
     { src: "https://images.unsplash.com/photo-1561489401-fc2876ced162?w=800&q=80", alt: "Exhibition Layout", badge: "German Congress 2023", badgeColor: "#250801", title: "Exhibition Layout", description: "Strategic positioning for optimal visitor flow" },
   ],
   boothDosTitle: "Booth Presentation Standards",
@@ -568,6 +568,14 @@ export default function App() {
               </div>
             </Card>
           ))}
+        </div>
+
+        <div style={{ textAlign: "center", marginTop: 32 }}>
+          <a href="https://medistim.dash.app/browse/panels?keywords=&from=0&sort=DOWNLOAD_COUNT:DESC&browse-filter-f15b56f0-7fb2-41c1-81e9-d7430fdbbb34=733c2399-28a3-4e76-b4f7-97ca8e9f1851&withAi=true"
+            target="_blank" rel="noopener noreferrer"
+            style={{ display: "inline-block", background: O, color: "#fff", borderRadius: 8, padding: "12px 28px", fontSize: 14, fontWeight: 500, textDecoration: "none" }}>
+            Browse Print Materials
+          </a>
         </div>
       </Section>
 
