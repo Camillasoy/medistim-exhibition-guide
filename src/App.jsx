@@ -465,7 +465,7 @@ export default function App() {
                   style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
                 <Editable value={c.verticalBannerDescription} onChange={v => set("verticalBannerDescription", v)} tag="p"
                   style={{ fontSize: 13, color: "#6b7280", marginBottom: 16 }} />
-                <img src={c.verticalBannerSrc} alt="Vertical Banner" style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", borderRadius: 8, marginBottom: 12 }} />
+                <img src={c.verticalBannerSrc} alt="Vertical Banner" style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
                 <Editable value={c.verticalBannerText} onChange={v => set("verticalBannerText", v)} tag="p"
                   style={{ fontSize: 13, color: "#6b7280" }} />
               </div>
