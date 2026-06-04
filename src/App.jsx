@@ -117,16 +117,24 @@ const CONTENT = {
     "Always follow up with contact information",
   ],
 
-  attireTitle: "Attire Guidelines",
-  attireItems: [
-    { color: "#250801", title: "Business Formal", description: "Dark suits preferred" },
-    { color: "#FFFFFF", title: "White Shirts", description: "Crisp and clean", border: true },
-    { color: "#F36C21", title: "Brand Accent", description: "Optional tie or accessory" },
+  boothSetupTitle: "Booth Setup",
+  boothSetupPoints: [
+    "Clean and open layout with clear sightlines and easy visitor access.",
+    "Large backwall graphics provide strong brand visibility without overwhelming the space.",
+    "Product displays and meeting areas are strategically placed to encourage interaction while maintaining a tidy appearance.",
   ],
 
-  nameBadgeTitle: "Name Badge",
-  nameBadgeName: "Jane Doe",
-  nameBadgeRole: "Clinical Specialist",
+  teamEngagementTitle: "Team Engagement",
+  teamEngagementPoints: [
+    "Team members proactively engage visitors and initiate conversations.",
+    "Staff are available throughout the booth to answer questions and discuss products and clinical applications.",
+    "The team creates a welcoming atmosphere by maintaining an active presence and interacting with attendees across the booth space.",
+  ],
+
+  professionalAppearanceTitle: "Professional Appearance",
+  professionalAppearancePoints: [
+    "Team members are dressed professionally, reinforcing a consistent and polished brand image.",
+  ],
 
   // Checklist
   checklistTitle: "Pre-Event Checklist",
@@ -620,38 +628,49 @@ export default function App() {
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             <Card>
               <div style={{ padding: 24 }}>
-                <Editable value={c.attireTitle} onChange={v => set("attireTitle", v)} tag="h4"
-                  style={{ fontWeight: 600, color: DARK, marginBottom: 16 }} />
-                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-                  {c.attireItems.map((a, i) => (
-                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                      <div style={{ width: 44, height: 44, background: a.color, borderRadius: 8, border: a.border ? "2px solid #d1d5db" : "none", flexShrink: 0 }} />
-                      <div>
-                        <Editable value={a.title} onChange={v => setArr("attireItems", i, "title", v)} tag="p"
-                          style={{ fontWeight: 500, fontSize: 14, color: DARK, margin: 0 }} />
-                        <Editable value={a.description} onChange={v => setArr("attireItems", i, "description", v)} tag="p"
-                          style={{ fontSize: 12, color: "#9ca3af", margin: 0 }} />
-                      </div>
-                    </div>
+                <Editable value={c.boothSetupTitle} onChange={v => set("boothSetupTitle", v)} tag="h4"
+                  style={{ fontWeight: 600, color: DARK, marginBottom: 12 }} />
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+                  {c.boothSetupPoints.map((pt, i) => (
+                    <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                      <div style={{ width: 6, height: 6, borderRadius: "50%", background: O, marginTop: 7, flexShrink: 0 }} />
+                      <Editable value={pt} onChange={v => setC(prev => ({ ...prev, boothSetupPoints: prev.boothSetupPoints.map((x, j) => j === i ? v : x) }))} tag="span"
+                        style={{ fontSize: 14, color: "#6b7280" }} />
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </Card>
 
             <Card>
               <div style={{ padding: 24 }}>
-                <Editable value={c.nameBadgeTitle} onChange={v => set("nameBadgeTitle", v)} tag="h4"
-                  style={{ fontWeight: 600, color: DARK, marginBottom: 16 }} />
-                <div style={{ border: "1.5px solid #e5e7eb", borderRadius: 10, padding: 16 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                    <div style={{ width: 36, height: 36, background: O, borderRadius: 6, flexShrink: 0 }} />
-                    <span style={{ fontSize: 11, color: "#9ca3af", fontWeight: 600, letterSpacing: 1 }}>MEDISTIM</span>
-                  </div>
-                  <Editable value={c.nameBadgeName} onChange={v => set("nameBadgeName", v)} tag="p"
-                    style={{ fontWeight: 600, color: DARK, margin: 0, fontSize: 15 }} />
-                  <Editable value={c.nameBadgeRole} onChange={v => set("nameBadgeRole", v)} tag="p"
-                    style={{ fontSize: 12, color: "#9ca3af", margin: 0 }} />
-                </div>
+                <Editable value={c.teamEngagementTitle} onChange={v => set("teamEngagementTitle", v)} tag="h4"
+                  style={{ fontWeight: 600, color: DARK, marginBottom: 12 }} />
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+                  {c.teamEngagementPoints.map((pt, i) => (
+                    <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                      <div style={{ width: 6, height: 6, borderRadius: "50%", background: O, marginTop: 7, flexShrink: 0 }} />
+                      <Editable value={pt} onChange={v => setC(prev => ({ ...prev, teamEngagementPoints: prev.teamEngagementPoints.map((x, j) => j === i ? v : x) }))} tag="span"
+                        style={{ fontSize: 14, color: "#6b7280" }} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Card>
+
+            <Card>
+              <div style={{ padding: 24 }}>
+                <Editable value={c.professionalAppearanceTitle} onChange={v => set("professionalAppearanceTitle", v)} tag="h4"
+                  style={{ fontWeight: 600, color: DARK, marginBottom: 12 }} />
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+                  {c.professionalAppearancePoints.map((pt, i) => (
+                    <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                      <div style={{ width: 6, height: 6, borderRadius: "50%", background: O, marginTop: 7, flexShrink: 0 }} />
+                      <Editable value={pt} onChange={v => setC(prev => ({ ...prev, professionalAppearancePoints: prev.professionalAppearancePoints.map((x, j) => j === i ? v : x) }))} tag="span"
+                        style={{ fontSize: 14, color: "#6b7280" }} />
+                    </li>
+                  ))}
+                </ul>
               </div>
             </Card>
           </div>
