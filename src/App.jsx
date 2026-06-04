@@ -27,7 +27,7 @@ const CONTENT = {
 
   // Overview
   section1Title: "Exhibition Objectives",
-  section1Description: "Our presence at congresses and exhibitions is an extension of the Medistim brand. Consistent booth design, messaging, and presentation help create a professional and recognizable experience across all events, reinforcing who we are and the value we bring to surgeons and healthcare providers.",
+  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand, expertise, and market leadership. The quality of our preparation and the professionalism of our presence send a clear message about who we are as a company. Consistent booth design, messaging, materials, and presentation ensure that every event delivers a recognizable and high-quality brand experience. By holding ourselves to the same standards at every congress and exhibition, we strengthen our reputation, build confidence in our products and solutions, and reinforce Medistim's position as a trusted partner for surgeons and healthcare providers worldwide.",
 
   section2Title: "Objectives of the Booth",
   section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage in meaningful discussions with our team. Product demonstrations, clinical evidence, and educational materials should be presented in a clear and accessible manner, enabling visitors to understand how Medistim supports improved surgical quality and patient outcomes.",
@@ -63,10 +63,11 @@ const CONTENT = {
   // Visual Elements
   visualTitle: "Visual Elements",
   visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
+  postersDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop.",
 
   verticalBannerTitle: "Marketing Material poster with QR code",
   verticalBannerDescription: "2m × 0.8m roll-up banner",
-  verticalBannerText: "Position on counters",
+  verticalBannerText: "The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
   verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
   horizontalBannerTitle: "Vertical INTUI Posters",
@@ -488,7 +489,7 @@ export default function App() {
 
         {/* Tabs */}
         <div style={{ borderBottom: "1px solid #e5e7eb", marginBottom: 28, display: "flex", gap: 0 }}>
-          {[["banners", "Banners"], ["digital", "Digital Screens"]].map(([key, label]) => (
+          {[["banners", "Posters"], ["digital", "Digital Screens"]].map(([key, label]) => (
             <button key={key} onClick={() => setActiveTab(key)}
               style={{ padding: "10px 20px", border: "none", background: "none", cursor: "pointer", fontSize: 14, fontWeight: activeTab === key ? 600 : 400, color: activeTab === key ? O : "#6b7280", borderBottom: activeTab === key ? `2px solid ${O}` : "2px solid transparent", marginBottom: -1, transition: "all 0.15s" }}>
               {label}
@@ -497,6 +498,8 @@ export default function App() {
         </div>
 
         {activeTab === "banners" && (
+          <div>
+            <p style={{ color: "#6b7280", fontSize: 14, marginBottom: 24, maxWidth: 680 }}>{c.postersDescription}</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
             <Card>
               <div style={{ padding: 20 }}>
@@ -520,6 +523,7 @@ export default function App() {
                   style={{ fontSize: 13, color: "#6b7280" }} />
               </div>
             </Card>
+          </div>
           </div>
         )}
 
