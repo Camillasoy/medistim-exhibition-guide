@@ -48,8 +48,8 @@ const CONTENT = {
   boothDos: [
     "Keep booth perimeter open",
     "Hide boxes, coats, suitcases and packaging",
-    "Store giveaways in closed cabinets",
-    "Keep counters clear except approved materials",
+    "Store surplus marketing collateral and giveaways in closed cabinets",
+    "Keep counters clear except for approved materials",
     "Keep screens synchronized with approved content",
   ],
   boothDonts: [
@@ -62,12 +62,12 @@ const CONTENT = {
 
   // Visual Elements
   visualTitle: "Visual Elements",
-  visualDescription: "Ensure all visuals follow Medistim's core palette and typography system. Copy tone should be concise, factual, and benefits-focused.",
+  visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
 
-  verticalBannerTitle: "Vertical Banner",
+  verticalBannerTitle: "Marketing Material poster with QR code",
   verticalBannerDescription: "2m × 0.8m roll-up banner",
-  verticalBannerText: "Position at booth entry points",
-  verticalBannerSrc: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&q=80",
+  verticalBannerText: "Position on counters",
+  verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png0",
 
   horizontalBannerTitle: "Horizontal Banner",
   horizontalBannerDescription: "1m × 3m backdrop banner",
