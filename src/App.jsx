@@ -595,9 +595,9 @@ export default function App() {
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 340px", gap: 24 }} className="team-grid">
           <Card>
-            <div style={{ aspectRatio: "16/9", overflow: "hidden" }}>
+            <div style={{ aspectRatio: "4/5", overflow: "hidden" }}>
               <video
-                src="https://res.cloudinary.com/dranffioe/video/upload/v1780577323/ESVS_day_2_9x16_azznqr.mp4"
+                src="https://res.cloudinary.com/dranffioe/video/upload/v1780577531/ESVS_day_2_4x5_xwdcnt.mp4"
                 autoPlay loop muted playsInline
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
