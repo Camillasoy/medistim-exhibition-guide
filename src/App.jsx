@@ -64,12 +64,12 @@ const CONTENT = {
   visualTitle: "Other Visual Elements",
   visualDescription: "Here are examples of other visual elements for use at Medistim's booths.",
 
-  verticalBannerTitle: "Marketing Material poster with QR code",
-  verticalBannerDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop.",
-  verticalBannerText: "Illustrated here using Cardiac materials",
+  verticalBannerTitle: "QR code Poster for Marketing Material",
+  verticalBannerDescription: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded..",
+  verticalBannerText: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop",
   verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
-  horizontalBannerTitle: "Vertical INTUI Posters",
+  horizontalBannerTitle: "Example of INTUI Campaign Posters",
   horizontalBannerDescription: "These are also available in A3 size and include a built-in easel back for easy display.",
   horizontalBannerText: "The posters can be customized with QR codes linked to specific URLs. Contact Marketing for more information.",
   horizontalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
