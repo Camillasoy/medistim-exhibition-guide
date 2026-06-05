@@ -114,12 +114,12 @@ const CONTENT = {
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780653300/Skjermbilde_2026-02-16_151746_xpryc7.png",
       title: "FlowPhantom",
-      description: "Add your flyer image and description here."
+      description: "The Medistim Flow Phantom is a valuable booth tool for hands-on demonstrations of Transit Time Flow Measurement (TTFM). By simulating blood flow in a realistic and interactive way, it helps visitors better understand flow measurement principles and the clinical value of Medistim technology. Compact and easy to transport, the Flow Phantom is ideal for congresses, workshops, and training events where live demonstrations can help attract visitors and create meaningful discussions."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780654298/Leg_simulator_2_duzufi.png",
       title: "Leg Simulator",
-      description: "Add your booth graphics image and description here."
+      description: "The Leg Simulator is designed specifically for vascular meetings and provides a realistic demonstration of flow measurement during a peripheral bypass procedure. Hands-on demonstrations help visitors better understand the clinical value of Medistim technology while creating an engaging and interactive booth experience."
     },
   ],
 
