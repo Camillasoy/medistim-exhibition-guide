@@ -9,8 +9,8 @@ const CONTENT = {
   headerSubtitle: "Exhibition & Congress Guide",
 
   // Navigation
-  navLinks: ["Overview", "Booth Design", "Booth Materials", "Visual Elements", "Merchandise", "Team", "Checklist"],
-  navIds:   ["overview", "booth",        "boothmaterials",  "visual",          "merchandise", "team",  "checklist"],
+  navLinks: ["Overview", "Booth Design", "Booth Materials", "Merchandise", "Team", "Checklist"],
+  navIds:   ["overview", "booth",        "visual",          "merchandise", "team",  "checklist"],
 
   // Hero
   heroBadge: "Version 1.0.0",
@@ -83,7 +83,7 @@ const CONTENT = {
   ],
 
   // Visual Elements (renamed tabs)
-  visualTitle: "Visual Elements",
+  visualTitle: "Booth Materials",
   visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
 
   itemsAtBoothDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
@@ -480,38 +480,6 @@ export default function App() {
       </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
-
-      {/* ── BOOTH MATERIALS ── */}
-      <Section id="boothmaterials" bg="#f9fafb">
-        <Editable value={c.boothMaterialsTitle} onChange={v => set("boothMaterialsTitle", v)} tag="h2"
-          style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }} />
-        <Editable value={c.boothMaterialsDescription} onChange={v => set("boothMaterialsDescription", v)} tag="p"
-          style={{ color: "#6b7280", marginBottom: 32, maxWidth: 680 }} multiline />
-
-        <div className="collateral-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
-          {c.boothMaterialsItems.map((item, i) => (
-            <Card key={i}>
-              <div style={{ aspectRatio: "1/1.4", overflow: "hidden", background: "#f3f4f6" }}>
-                <img src={item.src} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-              </div>
-              <div style={{ padding: "14px 16px" }}>
-                <Editable value={item.title} onChange={v => setArr("boothMaterialsItems", i, "title", v)} tag="h4"
-                  style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-                <Editable value={item.description} onChange={v => setArr("boothMaterialsItems", i, "description", v)} tag="p"
-                  style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.6 }} multiline />
-              </div>
-            </Card>
-          ))}
-        </div>
-
-        <div style={{ textAlign: "center", marginTop: 32 }}>
-          <a href="https://medistim.dash.app/browse/panels?keywords=&from=0&sort=DOWNLOAD_COUNT:DESC&browse-filter-f15b56f0-7fb2-41c1-81e9-d7430fdbbb34=733c2399-28a3-4e76-b4f7-97ca8e9f1851&withAi=true"
-            target="_blank" rel="noopener noreferrer"
-            style={{ display: "inline-block", background: O, color: "#fff", borderRadius: 8, padding: "12px 28px", fontSize: 14, fontWeight: 500, textDecoration: "none" }}>
-            Browse Print Materials
-          </a>
-        </div>
-      </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
 
