@@ -77,7 +77,7 @@ const CONTENT = {
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
-      title: "INTUI Posters",
+      title: "Other Promotional Posters",
       description: "Example of INTUI promotion posters."
     },
   ],
@@ -99,13 +99,14 @@ const CONTENT = {
       description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded. The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages."
     },
     {
-      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
-      title: "INTUI Posters",
-      description: "Example of INTUI promotion posters."
-    },
-  ],
-
-  supportingVisualsDescription: "Visual assets used to support booth branding and presentation.",
+      title: "Other Promotional Posters",
+      description: "Example of INTUI promotion posters.",
+      slides: [
+        "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
+        "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
+        "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_EduQ-2-pager_aygrrv.jpg",
+      ]
+    }, "Visual assets used to support booth branding and presentation.",
   supportingVisualsCards: [
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
@@ -253,6 +254,33 @@ function Carousel({ slides }) {
             style={{ width: i === idx ? 24 : 8, height: 8, borderRadius: 4, background: i === idx ? "#F36C21" : "rgba(255,255,255,0.5)", border: "none", cursor: "pointer", transition: "all 0.3s", padding: 0 }} />
         ))}
       </div>
+    </div>
+  );
+}
+
+// ============================================================
+// Card-level image carousel
+// ============================================================
+function CardCarousel({ slides }) {
+  const [idx, setIdx] = useState(0);
+  return (
+    <div style={{ position: "relative", width: "100%", background: "#f3f4f6", borderRadius: 8, marginBottom: 12, overflow: "hidden" }}>
+      <img src={slides[idx]} alt={`Slide ${idx + 1}`}
+        style={{ width: "100%", maxHeight: 400, objectFit: "contain", display: "block" }} />
+      {slides.length > 1 && (
+        <>
+          <button onClick={() => setIdx(i => (i - 1 + slides.length) % slides.length)}
+            style={{ position: "absolute", left: 8, top: "50%", transform: "translateY(-50%)", background: "rgba(0,0,0,0.4)", color: "#fff", border: "none", borderRadius: "50%", width: 32, height: 32, cursor: "pointer", fontSize: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>‹</button>
+          <button onClick={() => setIdx(i => (i + 1) % slides.length)}
+            style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", background: "rgba(0,0,0,0.4)", color: "#fff", border: "none", borderRadius: "50%", width: 32, height: 32, cursor: "pointer", fontSize: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>›</button>
+          <div style={{ position: "absolute", bottom: 8, left: "50%", transform: "translateX(-50%)", display: "flex", gap: 6 }}>
+            {slides.map((_, i) => (
+              <button key={i} onClick={() => setIdx(i)}
+                style={{ width: i === idx ? 20 : 7, height: 7, borderRadius: 4, background: i === idx ? "#F36C21" : "rgba(255,255,255,0.7)", border: "none", cursor: "pointer", padding: 0, transition: "all 0.2s" }} />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -509,7 +537,10 @@ export default function App() {
                   <div style={{ padding: 20 }}>
                     <Editable value={item.title} onChange={v => setArr("itemsAtBoothCards", i, "title", v)} tag="h3"
                       style={{ fontWeight: 600, color: DARK, marginBottom: 8 }} />
-                    <img src={item.src} alt={item.title} style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
+                    {item.slides
+                      ? <CardCarousel slides={item.slides} />
+                      : <img src={item.src} alt={item.title} style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
+                    }
                     <Editable value={item.description} onChange={v => setArr("itemsAtBoothCards", i, "description", v)} tag="p"
                       style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.6 }} multiline />
                   </div>
