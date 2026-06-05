@@ -99,8 +99,8 @@ const CONTENT = {
       description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded. The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages."
     },
     {
-      title: "Other Promotional Posters",
-      description: "Example of INTUI promotion posters.",
+      title: "Other Promotional Posters and Flyers",
+      description: "Below are examples of posters and flyers that can be used at congresses and exhibitions to promote Medistim products, services, and educational resources. Flyers provide visitors with a convenient way to access information after the event by scanning a QR code at a later time. Shown here are INTUI promotional posters, an EduQ flyer, and a Guidebook flyer designed for visitors who prefer digital access rather than taking a printed copy with them.",
       slides: [
         "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
