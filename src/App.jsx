@@ -178,7 +178,8 @@ const CONTENT = {
 
   // Checklist
   checklistTitle: "Pre-Event Checklist",
-  checklistDescription: "Complete all items before the event to ensure a smooth setup and successful exhibition.",
+  checklistDescription: "Use this checklist to plan and prepare for upcoming congresses and exhibitions. It covers the key activities required to ensure that booth graphics, marketing materials, demonstration equipment, logistics, and staffing are ready on time. Early planning and coordination with Marketing help ensure a professional booth presence, avoid last-minute issues, and maximize the value of our participation at each event.",
+  checklistPdfUrl: "https://link.assetfile.io/6wKz4IBzh4pBJzj0P48EKE/Medistim_Pre_Event_Checklist+%281%29.pdf",
   checklistItems: [
     { key: "graphics",   label: "Booth graphics printed and packed" },
     { key: "demo",       label: "Demo equipment tested and ready" },
@@ -699,7 +700,14 @@ export default function App() {
           <Editable value={c.checklistTitle} onChange={v => set("checklistTitle", v)} tag="h2"
             style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }} />
           <Editable value={c.checklistDescription} onChange={v => set("checklistDescription", v)} tag="p"
-            style={{ color: "#6b7280", marginBottom: 32 }} multiline />
+            style={{ color: "#6b7280", marginBottom: 24 }} multiline />
+
+          <div style={{ marginBottom: 32 }}>
+            <a href={c.checklistPdfUrl} target="_blank" rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, background: O, color: "#fff", borderRadius: 8, padding: "12px 24px", fontSize: 14, fontWeight: 500, textDecoration: "none" }}>
+              <span>⬇</span> Download Checklist PDF
+            </a>
+          </div>
 
           <Card style={{ border: allChecked ? `2px solid ${O}` : "1px solid #e5e7eb", background: allChecked ? "#fff8f4" : "#fff" }}>
             <div style={{ padding: 28, display: "flex", flexDirection: "column", gap: 0 }}>
