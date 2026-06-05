@@ -206,7 +206,7 @@ function Carousel({ slides }) {
   }, [slides.length]);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: 420, overflow: "hidden", background: "#111" }}>
+    <div className="carousel-height" style={{ position: "relative", width: "100%", height: 420, overflow: "hidden", background: "#111" }}>
       {slides.map((s, i) => (
         <img key={i} src={s.src} alt={s.alt}
           style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: i === idx ? 1 : 0, transition: "opacity 0.8s ease" }} />
@@ -227,7 +227,7 @@ function Carousel({ slides }) {
 // ============================================================
 function Section({ id, bg = "#fff", children }) {
   return (
-    <section id={id} style={{ background: bg, padding: "64px 24px" }}>
+    <section id={id} className="section-padding" style={{ background: bg, padding: "64px 24px" }}>
       <div style={{ maxWidth: 1120, margin: "0 auto" }}>{children}</div>
     </section>
   );
@@ -336,11 +336,11 @@ export default function App() {
       </header>
 
       {/* ── HERO ── */}
-      <section style={{ background: "#f9fafb", padding: "72px 24px 64px", textAlign: "center" }}>
+      <section className="hero-section" style={{ background: "#f9fafb", padding: "72px 24px 64px", textAlign: "center" }}>
         <span style={{ display: "inline-block", background: O, color: "#fff", fontSize: 12, fontWeight: 600, borderRadius: 20, padding: "4px 14px", marginBottom: 16 }}>
           <Editable value={c.heroBadge} onChange={v => set("heroBadge", v)} />
         </span>
-        <Editable value={c.heroTitle} onChange={v => set("heroTitle", v)} tag="h1"
+        <Editable value={c.heroTitle} onChange={v => set("heroTitle", v)} tag="h1" className="hero-title"
           style={{ fontSize: 40, fontWeight: 700, color: DARK, marginBottom: 12 }} />
         <Editable value={c.heroDate} onChange={v => set("heroDate", v)} tag="p"
           style={{ color: "#6b7280", marginBottom: 8 }} />
@@ -376,7 +376,7 @@ export default function App() {
         <Editable value={c.boothTitle} onChange={v => set("boothTitle", v)} tag="h2"
           style={{ fontSize: 28, fontWeight: 700, marginBottom: 32 }} />
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, marginBottom: 32 }}>
+        <div className="booth-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, marginBottom: 32 }}>
           {c.boothCards.map((bc, i) => (
             <Card key={i}>
               <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden" }}>
@@ -399,7 +399,7 @@ export default function App() {
         <div style={{ marginTop: 24 }}>
           <Editable value={c.boothDosTitle} onChange={v => set("boothDosTitle", v)} tag="h3"
             style={{ fontSize: 20, fontWeight: 700, color: DARK, marginBottom: 16 }} />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+          <div className="dos-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
             {/* Do */}
             <Card>
               <div style={{ padding: 24 }}>
@@ -453,7 +453,7 @@ export default function App() {
         <Editable value={c.collateralDescription} onChange={v => set("collateralDescription", v)} tag="p"
           style={{ color: "#6b7280", marginBottom: 32, maxWidth: 680 }} multiline />
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
+        <div className="collateral-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
           {c.collateralItems.map((item, i) => (
             <Card key={i}>
               <div style={{ aspectRatio: "1/1.4", overflow: "hidden", background: "#f3f4f6" }}>
@@ -490,7 +490,7 @@ export default function App() {
         {/* Tabs */}
         <div style={{ borderBottom: "1px solid #e5e7eb", marginBottom: 28, display: "flex", gap: 0 }}>
           {[["banners", "Posters"], ["digital", "Digital Screens"]].map(([key, label]) => (
-            <button key={key} onClick={() => setActiveTab(key)}
+            <button key={key} onClick={() => setActiveTab(key)} className="tab-label"
               style={{ padding: "10px 20px", border: "none", background: "none", cursor: "pointer", fontSize: 14, fontWeight: activeTab === key ? 600 : 400, color: activeTab === key ? O : "#6b7280", borderBottom: activeTab === key ? `2px solid ${O}` : "2px solid transparent", marginBottom: -1, transition: "all 0.15s" }}>
               {label}
             </button>
@@ -500,7 +500,7 @@ export default function App() {
         {activeTab === "banners" && (
           <div>
             <p style={{ color: "#6b7280", fontSize: 14, marginBottom: 24, maxWidth: 680 }}>{c.postersDescription}</p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+          <div className="poster-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
             <Card>
               <div style={{ padding: 20 }}>
                 <Editable value={c.verticalBannerTitle} onChange={v => set("verticalBannerTitle", v)} tag="h3"
@@ -572,7 +572,7 @@ export default function App() {
         <Editable value={c.merchandiseDescription} onChange={v => set("merchandiseDescription", v)} tag="p"
           style={{ color: "#6b7280", marginBottom: 32, maxWidth: 680 }} multiline />
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 20, marginBottom: 32 }}>
+        <div className="merch-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 20, marginBottom: 32 }}>
           {c.merchandiseItems.map((item, i) => (
             <Card key={i}>
               <div style={{ aspectRatio: "1/1", overflow: "hidden", background: "#f3f4f6" }}>
@@ -720,7 +720,7 @@ export default function App() {
       </Section>
 
       {/* ── FOOTER ── */}
-      <footer style={{ background: DARK, color: "#fff", padding: "48px 24px", textAlign: "center" }}>
+      <footer className="footer-padding" style={{ background: DARK, color: "#fff", padding: "48px 24px", textAlign: "center" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 16 }}>
           <div style={{ width: 36, height: 36, background: O, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 16 }}>M</div>
           <span style={{ fontWeight: 600, fontSize: 16 }}>Medistim</span>
@@ -734,10 +734,24 @@ export default function App() {
       </footer>
 
       <style>{`
+        * { box-sizing: border-box; }
+
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-toggle { display: block !important; }
           .team-grid { grid-template-columns: 1fr !important; }
+          .hero-title { font-size: 26px !important; }
+          .hero-section { padding: 40px 16px 32px !important; }
+          .section-padding { padding: 40px 16px !important; }
+          .carousel-height { height: 240px !important; }
+          .tab-label { font-size: 12px !important; padding: 8px 12px !important; }
+          .footer-padding { padding: 32px 16px !important; }
+          .dos-grid { grid-template-columns: 1fr !important; }
+          .booth-grid { grid-template-columns: 1fr !important; }
+          .collateral-grid { grid-template-columns: 1fr !important; }
+          .merch-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .poster-grid { grid-template-columns: 1fr !important; }
+          .section-title { font-size: 22px !important; }
         }
       `}</style>
     </div>
