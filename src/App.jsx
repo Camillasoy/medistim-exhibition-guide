@@ -27,30 +27,30 @@ const CONTENT = {
 
   // Overview
   section1Title: "Exhibition Objectives",
-  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand and market leadership. The quality of our preparation and professionalism reflects who we are as a company. Consistent booth design, messaging, materials, and presentation ensure a recognizable and high-quality brand experience at every event. By maintaining these standards, we strengthen our reputation, build trust, and reinforce Medistim's position as a trusted partner for surgeons and healthcare providers worldwide.",
+  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand and market leadership. Consistent booth design, messaging, and presentation ensure a recognizable brand experience at every event — strengthening our reputation and reinforcing our position as a trusted partner for surgeons and healthcare providers worldwide.",
 
   section2Title: "Objectives of the Booth",
-  section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage in meaningful discussions with our team. Product demonstrations, clinical evidence, and educational materials should be presented in a clear and accessible manner, enabling visitors to understand how Medistim supports improved surgical quality and patient outcomes.",
+  section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage with our team. Demonstrations, clinical evidence, and educational materials should be presented clearly, helping visitors understand how Medistim supports improved surgical outcomes.",
 
-  overviewNote: "NOTE: All trade shows should be preapproved through marketing prior to commitments being made so proper resources and budgets can be allocated.",
+  overviewNote: "NOTE: All trade shows must be preapproved through Marketing before commitments are made, to ensure proper resources and budgets are allocated.",
 
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
   boothCards: [
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#1e6765", title: "Vascular Congress 2026", description: "A shell scheme booth 3x2m with the eye graphic backwall. This is from the Charing Cross CX meeting where the leg was used to demonstrate flow." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563679/Mockup_Vascular_Backwall_and_2_rollups-for_VAM_pybdnl.png", alt: "Floor Plan Layout", badge: "Vascular", badgeColor: "#1e6765", title: "Layout example 3x3m", description: "This example illustrates a standard 3×3m booth configuration with a large backwall and two rollups. Where space constraints apply, a setup with two rollups and a counter provides a practical alternative while ensuring consistent branding and a professional presentation.." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571081/Mockup_2_Rollups_Vascular_-_Medium_wylb0c.png", alt: "Booth Side View", badge: "Vascular", badgeColor: "#1e6765", title: "Small booth setup", description: "For small booths and tabletop exhibits, we recommend a setup consisting of two vascular rollups and a branded Medistim counter. Whenever possible, avoid using standard tables with tablecloths, as they can create a cluttered appearance and reduce the overall professionalism of the booth. A counter-based setup delivers a cleaner, more consistent brand presentation and makes better use of limited exhibition space." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780560015/PHOTO-Cardiac_booth_example_diipsl.jpg", alt: "Cardiac Congress 2025", badge: "Cardiac Congress 2025", badgeColor: "#f36c21", title: "Cardiac Congress 2025", description: "This example shows an open-space island booth measuring 3×2 m, featuring the Medistim Heart graphic as a central visual element. The booth was used at ISMICS Turkey 2025 and demonstrates how strong branding and clear visual communication can create an impactful presence even within a compact footprint." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563779/Mockup_Cardiac_Backwall_-_1_rollup_and_1_Screen_fxkmiq.png", alt: "Booth Configuration", badge: "Cardiac", badgeColor: "#F36C21", title: "Layout example", description: "This example shows a 3×3 m booth setup featuring one rollup and a screen with a continuous video loop. The combination of static branding and dynamic content helps attract visitors while maintaining a clean and professional booth presentation." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571082/Mockup_2_Rollups_Cardiac_-_Medium_dnfdyx.png", alt: "Exhibition Layout", badge: "Cardiac", badgeColor: "#f36c21", title: "Small booth setup", description: "This example shows a setup used for a cardiac meeting. For small booths and tabletop exhibits, we recommend a configuration consisting of two rollups and a branded Medistim counter. Whenever possible, avoid using standard tables with tablecloths, as they can create a cluttered appearance and reduce the overall professionalism of the booth. A counter-based setup delivers a cleaner, more consistent brand presentation and makes better use of limited exhibition space." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#1e6765", title: "Vascular Congress 2026", description: "A 3×2 m shell scheme booth with the Eye graphic backwall, used at the Charing Cross (CX) meeting. The vascular leg simulator was used to demonstrate flow measurement, creating an interactive experience for visitors." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563679/Mockup_Vascular_Backwall_and_2_rollups-for_VAM_pybdnl.png", alt: "Floor Plan Layout", badge: "Vascular", badgeColor: "#1e6765", title: "Layout example 3x3m", description: "A standard 3×3 m configuration with a large backwall and two rollups. Where space is limited, two rollups and a counter provide a practical alternative with consistent branding." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571081/Mockup_2_Rollups_Vascular_-_Medium_wylb0c.png", alt: "Booth Side View", badge: "Vascular", badgeColor: "#1e6765", title: "Small booth setup", description: "For small booths and tabletop exhibits, use two vascular rollups and a branded counter. Avoid standard tables with tablecloths — a counter setup delivers a cleaner, more professional presentation." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780560015/PHOTO-Cardiac_booth_example_diipsl.jpg", alt: "Cardiac Congress 2025", badge: "Cardiac Congress 2025", badgeColor: "#f36c21", title: "Cardiac Congress 2025", description: "A 3×2 m open-space island booth with the Heart graphic, used at ISMICS Turkey 2025. Demonstrates how strong branding creates an impactful presence within a compact footprint." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563779/Mockup_Cardiac_Backwall_-_1_rollup_and_1_Screen_fxkmiq.png", alt: "Booth Configuration", badge: "Cardiac", badgeColor: "#F36C21", title: "Layout example", description: "A 3×3 m setup with one rollup and a screen running a continuous video loop. Static branding combined with dynamic content helps attract visitors while maintaining a clean presentation." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571082/Mockup_2_Rollups_Cardiac_-_Medium_dnfdyx.png", alt: "Exhibition Layout", badge: "Cardiac", badgeColor: "#f36c21", title: "Small booth setup", description: "A compact cardiac setup with two rollups and a branded counter. Avoid tablecloths — a counter-based layout is cleaner, more consistent, and makes better use of limited space." },
   ],
   boothDosTitle: "Booth Presentation Standards",
   boothDos: [
     "Keep booth perimeter open",
     "Hide boxes, coats, suitcases and packaging",
-    "Store surplus marketing collateral and giveaways in closed cabinets",
+    "Store surplus collateral and giveaways in closed cabinets",
     "Keep counters clear except for approved materials",
-    "Keep screens synchronized with approved content",
+    "Keep screens synced with approved content",
   ],
   boothDonts: [
     "Use tablecloths",
@@ -62,7 +62,7 @@ const CONTENT = {
 
   // Booth Materials
   boothMaterialsTitle: "Booth Materials",
-  boothMaterialsDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
+  boothMaterialsDescription: "Reduce printed literature to a minimum. Guidebooks should always be available, and QR code posters should give visitors easy access to supporting materials.",
 
   boothMaterialsItems: [
     {
@@ -73,7 +73,7 @@ const CONTENT = {
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded. There are several different versions available for Cardiac, Vascular and Transplant meetings."
+      description: "These posters with QR codes link visitors to marketing materials, reducing the need for printed brochures. Available in Cardiac, Vascular and Transplant versions."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
@@ -84,23 +84,23 @@ const CONTENT = {
 
   // Visual Elements (renamed tabs)
   visualTitle: "Booth Materials",
-  visualDescription: "The materials displayed at our booth play an important role in how Medistim is perceived at congresses and exhibitions. Consistent use of approved guidebooks, posters, and supporting materials helps create a professional and recognizable brand experience while ensuring visitors have easy access to relevant product information. The items below are recommended as standard booth materials and should be included as part of the event planning and preparation process.",
+  visualDescription: "Consistent use of approved guidebooks, posters, and supporting materials creates a professional brand experience and ensures visitors have easy access to relevant product information.",
 
   itemsAtBoothDescription: "",
   itemsAtBoothCards: [
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png",
       title: "Guidebooks",
-      description: "Guidebooks are a valuable resource for visitors and should always be available at the booth. We recommend having a minimum of 20 copies available for each congress to ensure sufficient supply throughout the event. Printed copies can be ordered directly through the Medistim webshop as part of the event preparation process."
+      description: "Always available at the booth — minimum 20 copies per congress recommended. Order printed copies through the Medistim webshop as part of event preparation."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded. The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages."
+      description: "A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages — contact Marketing for customization."
     },
     {
       title: "Other Promotional Posters and Flyers",
-      description: "Shown here are INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. The flyers are sized A5 and provide visitors with a convenient way to access information after the event by scanning a QR code at a later time. Additional flyers can be developed to support specific booth activities, campaigns, or product promotions. Contact Marketing for customization options.",
+      description: "INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. A5 flyers let visitors scan a QR code to access information after the event. Additional flyers can be developed for specific campaigns — contact Marketing.",
       slides: [
         "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
@@ -135,7 +135,7 @@ const CONTENT = {
 
   // Merchandise
   merchandiseTitle: "Giveaways & Merchandise",
-  merchandiseDescription: "All merchandise should be displayed in a tidy, non-cluttered manner. Use pen holders for pens, and arrange notebooks and microfiber cleaning cloths in neat groups of five or six. Candies or chocolates should be presented in a clean bowl—never scattered loosely.",
+  merchandiseDescription: "Display merchandise in a tidy, uncluttered manner. Use pen holders, arrange cloths in neat groups, and present sweets in a clean bowl — never scattered loosely.",
   merchandiseItems: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780055048/Shopper_with_Logo_rqs5ww.jpg", title: "Canvas Tote Bag", description: "Natural cotton with logo" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780054815/Medistim_Pen_tlvewq.png", title: "Premium Pen", description: "Medistim orange pen from Prodir" },
@@ -146,7 +146,7 @@ const CONTENT = {
 
   // Team
   teamTitle: "Example of a Strong Congress Presence (ESVS 2025)",
-  teamDescription: "This booth setup demonstrates how an open, uncluttered design can create an inviting and professional exhibition presence, as shown in this video from ESVS 2025.",
+  teamDescription: "An open, uncluttered booth design creates an inviting and professional exhibition presence, as shown in this video from ESVS 2025.",
   teamImageSrc: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80",
 
   engagementTitle: "Visitor Engagement",
@@ -159,21 +159,21 @@ const CONTENT = {
 
   boothSetupTitle: "Booth Setup",
   boothSetupPoints: [
-    "Clean and open layout with clear sightlines and easy visitor access.",
+    "Open layout with clear sightlines and easy visitor access.",
     "Large backwall graphics provide strong brand visibility without overwhelming the space.",
-    "Product displays and meeting areas are strategically placed to encourage interaction while maintaining a tidy appearance.",
+    "Product displays and meeting areas are positioned to encourage interaction while keeping the booth tidy.",
   ],
 
   teamEngagementTitle: "Team Engagement",
   teamEngagementPoints: [
-    "Team members proactively engage visitors and initiate conversations.",
-    "Staff are available throughout the booth to answer questions and discuss products and clinical applications.",
-    "The team creates a welcoming atmosphere by maintaining an active presence and interacting with attendees across the booth space.",
+    "Proactively engage visitors and initiate conversations.",
+    "Be available throughout the booth to answer questions and discuss products and clinical applications.",
+    "Maintain an active presence to create a welcoming atmosphere across the booth space.",
   ],
 
   professionalAppearanceTitle: "Professional Appearance",
   professionalAppearancePoints: [
-    "Team members are dressed professionally, reinforcing a consistent and polished brand image.",
+    "Dress professionally to reinforce a consistent and polished brand image.",
   ],
 
   // Checklist
