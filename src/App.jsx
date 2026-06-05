@@ -112,13 +112,13 @@ const CONTENT = {
   supportingVisualsDescription: "Visual assets used to support booth branding and presentation.",
   supportingVisualsCards: [
     {
-      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
-      title: "Flyers",
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780653300/Skjermbilde_2026-02-16_151746_xpryc7.png",
+      title: "FlowPhantom",
       description: "Add your flyer image and description here."
     },
     {
-      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
-      title: "Booth Graphics",
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780654298/Leg_simulator_2_duzufi.png",
+      title: "Leg Simulator",
       description: "Add your booth graphics image and description here."
     },
   ],
