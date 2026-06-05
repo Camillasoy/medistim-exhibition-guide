@@ -27,7 +27,7 @@ const CONTENT = {
 
   // Overview
   section1Title: "Exhibition Objectives",
-  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand, expertise, and market leadership. The quality of our preparation and the professionalism of our presence send a clear message about who we are as a company. Consistent booth design, messaging, materials, and presentation ensure that every event delivers a recognizable and high-quality brand experience. By holding ourselves to the same standards at every congress and exhibition, we strengthen our reputation, build confidence in our products and solutions, and reinforce Medistim's position as a trusted partner for surgeons and healthcare providers worldwide.",
+  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand and market leadership. The quality of our preparation and professionalism reflects who we are as a company. Consistent booth design, messaging, materials, and presentation ensure a recognizable and high-quality brand experience at every event. By maintaining these standards, we strengthen our reputation, build trust, and reinforce Medistim's position as a trusted partner for surgeons and healthcare providers worldwide.",
 
   section2Title: "Objectives of the Booth",
   section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage in meaningful discussions with our team. Product demonstrations, clinical evidence, and educational materials should be presented in a clear and accessible manner, enabling visitors to understand how Medistim supports improved surgical quality and patient outcomes.",
@@ -66,7 +66,7 @@ const CONTENT = {
   postersDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
 
   verticalBannerTitle: "Marketing Material poster with QR code",
-  verticalBannerDescription: "",
+  verticalBannerDescription: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded.",
   verticalBannerText: "",
   verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
 
@@ -89,7 +89,7 @@ const CONTENT = {
   collateralTitle: "Print Collateral",
   collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
   collateralItems: [
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png", title: "Guidebooks", description: "" },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png", title: "Guidebooks", description: "Guidebooks are a valuable resource for visitors and should always be available at the booth. We recommend having a minimum of 20 copies available for each congress to ensure sufficient supply throughout the event. Printed copies can be ordered directly through the Medistim webshop as part of the event preparation process." },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png", title: "Other Posters", description: "Example of INTUI promotion posters" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png", title: "Poster with QR code", description: "There are several different versions of these posters available for both Cardiac, Vascular and Transplant meetings." },
   ],
