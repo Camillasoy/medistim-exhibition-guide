@@ -84,7 +84,7 @@ const CONTENT = {
 
   // Visual Elements (renamed tabs)
   visualTitle: "Booth Materials",
-  visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
+  visualDescription: "The materials displayed at our booth play an important role in how Medistim is perceived at congresses and exhibitions. Consistent use of approved guidebooks, posters, and supporting materials helps create a professional and recognizable brand experience while ensuring visitors have easy access to relevant product information. The items below are recommended as standard booth materials and should be included as part of the event planning and preparation process.",
 
   itemsAtBoothDescription: "",
   itemsAtBoothCards: [
@@ -96,7 +96,7 @@ const CONTENT = {
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages."
+      description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded. The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
@@ -186,8 +186,8 @@ const CONTENT = {
 
   // Footer
   footerTitle: "Exhibition & Congress Guide",
-  footerVersion: "Version 1.0 – Updated October 2025",
-  footerContact: "For questions or support, contact the Marketing Team",
+  footerVersion: "Version 1.0.0 – Updated June 2026",
+  footerContact: "For questions or support, contact the Marketing Team at marketing@medistim.com",
 };
 
 // ============================================================
@@ -705,8 +705,10 @@ export default function App() {
           style={{ fontSize: 14, color: "#9ca3af", margin: "0 0 4px" }} />
         <Editable value={c.footerVersion} onChange={v => set("footerVersion", v)} tag="p"
           style={{ fontSize: 12, color: "#6b7280", margin: "0 0 16px" }} />
-        <Editable value={c.footerContact} onChange={v => set("footerContact", v)} tag="p"
-          style={{ fontSize: 12, color: "#6b7280", margin: 0 }} />
+        <p style={{ fontSize: 12, color: "#6b7280", margin: 0 }}>
+          For questions or support, contact the Marketing Team at{" "}
+          <a href="mailto:marketing@medistim.com" style={{ color: O, textDecoration: "none" }}>marketing@medistim.com</a>
+        </p>
       </footer>
 
       <style>{`
