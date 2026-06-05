@@ -106,7 +106,10 @@ const CONTENT = {
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_EduQ-2-pager_aygrrv.jpg",
       ]
-    }, "Visual assets used to support booth branding and presentation.",
+    },
+  ],
+
+  supportingVisualsDescription: "Visual assets used to support booth branding and presentation.",
   supportingVisualsCards: [
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
