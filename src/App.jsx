@@ -100,7 +100,7 @@ const CONTENT = {
     },
     {
       title: "Other Promotional Posters and Flyers",
-      description: "Below are examples of posters and flyers that can be used at congresses and exhibitions to promote Medistim products, services, and educational resources. Flyers provide visitors with a convenient way to access information after the event by scanning a QR code at a later time. Shown here are INTUI promotional posters, an EduQ flyer, and a Guidebook flyer designed for visitors who prefer digital access rather than taking a printed copy with them.",
+      description: "Shown here are INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. The flyers are sized A5 and provide visitors with a convenient way to access information after the event by scanning a QR code at a later time. Additional flyers can be developed to support specific booth activities, campaigns, or product promotions. Contact Marketing for customization options.",
       slides: [
         "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
