@@ -86,17 +86,17 @@ const CONTENT = {
   visualTitle: "Booth Materials",
   visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
 
-  itemsAtBoothDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
+  itemsAtBoothDescription: "",
   itemsAtBoothCards: [
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png",
       title: "Guidebooks",
-      description: "Guidebooks are a valuable resource for visitors and should always be available at the booth."
+      description: "Guidebooks are a valuable resource for visitors and should always be available at the booth. We recommend having a minimum of 20 copies available for each congress to ensure sufficient supply throughout the event. Printed copies can be ordered directly through the Medistim webshop as part of the event preparation process."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded."
+      description: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
