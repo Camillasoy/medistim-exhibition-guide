@@ -523,7 +523,7 @@ export default function App() {
 
         {/* Tabs */}
         <div style={{ borderBottom: "1px solid #e5e7eb", marginBottom: 28, display: "flex", gap: 0 }}>
-          {[["items", "Items at Booth"], ["supporting", "Supporting Visual Elements"]].map(([key, label]) => (
+          {[["items", "Standard Items at Booth"], ["supporting", "Supporting Elements"]].map(([key, label]) => (
             <button key={key} onClick={() => setActiveTab(key)} className="tab-label"
               style={{ padding: "10px 20px", border: "none", background: "none", cursor: "pointer", fontSize: 14, fontWeight: activeTab === key ? 600 : 400, color: activeTab === key ? O : "#6b7280", borderBottom: activeTab === key ? `2px solid ${O}` : "2px solid transparent", marginBottom: -1, transition: "all 0.15s" }}>
               {label}
