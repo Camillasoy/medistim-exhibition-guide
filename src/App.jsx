@@ -9,8 +9,8 @@ const CONTENT = {
   headerSubtitle: "Exhibition & Congress Guide",
 
   // Navigation
-  navLinks: ["Overview", "Booth Design", "Collateral", "Visual Elements", "Merchandise", "Team", "Checklist"],
-  navIds:   ["overview", "booth",        "collateral", "visual",          "merchandise", "team",  "checklist"],
+  navLinks: ["Overview", "Booth Design", "Booth Materials", "Visual Elements", "Merchandise", "Team", "Checklist"],
+  navIds:   ["overview", "booth",        "boothmaterials",  "visual",          "merchandise", "team",  "checklist"],
 
   // Hero
   heroBadge: "Version 1.0.0",
@@ -60,20 +60,64 @@ const CONTENT = {
     "Store personal belongings in visitor view",
   ],
 
-  // Visual Elements
+  // Booth Materials
+  boothMaterialsTitle: "Booth Materials",
+  boothMaterialsDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
+
+  boothMaterialsItems: [
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png",
+      title: "Guidebooks",
+      description: "Guidebooks are a valuable resource for visitors and should always be available at the booth. We recommend having a minimum of 20 copies available for each congress to ensure sufficient supply throughout the event. Printed copies can be ordered directly through the Medistim webshop as part of the event preparation process."
+    },
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
+      title: "Marketing Material Poster with QR Code",
+      description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded. There are several different versions available for Cardiac, Vascular and Transplant meetings."
+    },
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
+      title: "INTUI Posters",
+      description: "Example of INTUI promotion posters."
+    },
+  ],
+
+  // Visual Elements (renamed tabs)
   visualTitle: "Visual Elements",
   visualDescription: "Here are examples of various posters, flyers and signs for use at Medistim's booths.",
-  postersDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
 
-  verticalBannerTitle: "Marketing Material poster with QR code",
-  verticalBannerDescription: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded.",
-  verticalBannerText: "",
-  verticalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
+  itemsAtBoothDescription: "The posters are A3-sized and come with a built-in easel back, allowing them to be easily displayed on a counter or tabletop. The posters can be tailored with QR codes directing users to specific web pages. For customization options, please contact Marketing.",
+  itemsAtBoothCards: [
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png",
+      title: "Guidebooks",
+      description: "Guidebooks are a valuable resource for visitors and should always be available at the booth."
+    },
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
+      title: "Marketing Material Poster with QR Code",
+      description: "These posters, equipped with QR codes linking to our marketing materials, reduce the need for printed brochures and flyers that often go unused or are discarded."
+    },
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
+      title: "INTUI Posters",
+      description: "Example of INTUI promotion posters."
+    },
+  ],
 
-  horizontalBannerTitle: "Vertical INTUI Posters",
-  horizontalBannerDescription: "",
-  horizontalBannerText: "",
-  horizontalBannerSrc: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
+  supportingVisualsDescription: "Visual assets used to support booth branding and presentation.",
+  supportingVisualsCards: [
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
+      title: "Flyers",
+      description: "Add your flyer image and description here."
+    },
+    {
+      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
+      title: "Booth Graphics",
+      description: "Add your booth graphics image and description here."
+    },
+  ],
 
   digitalScreenTitle: "Digital Screen Layouts",
   digitalScreenDescription: "16:9 screen format for product demos and presentations",
@@ -83,15 +127,6 @@ const CONTENT = {
     "Keep animations subtle and professional",
     "Use high-contrast text for readability",
     "Auto-loop content every 60–90 seconds",
-  ],
-
-  // Print Collateral
-  collateralTitle: "Print Collateral",
-  collateralDescription: "Reduce printed literature to a minimum to avoid waste. Guidebooks should always be included at the booth, and QR code posters should be used to give visitors easy access to all supporting materials.",
-  collateralItems: [
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png", title: "Guidebooks", description: "Guidebooks are a valuable resource for visitors and should always be available at the booth. We recommend having a minimum of 20 copies available for each congress to ensure sufficient supply throughout the event. Printed copies can be ordered directly through the Medistim webshop as part of the event preparation process." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png", title: "Other Posters", description: "Example of INTUI promotion posters" },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png", title: "Poster with QR code", description: "There are several different versions of these posters available for both Cardiac, Vascular and Transplant meetings." },
   ],
 
   // Merchandise
@@ -250,7 +285,7 @@ function Card({ children, style = {} }) {
 export default function App() {
   const [c, setC] = useState(CONTENT);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("banners");
+  const [activeTab, setActiveTab] = useState("items");
   const [checklist, setChecklist] = useState(() =>
     Object.fromEntries(c.checklistItems.map(i => [i.key, false]))
   );
@@ -446,24 +481,24 @@ export default function App() {
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
 
-      {/* ── COLLATERAL ── */}
-      <Section id="collateral" bg="#f9fafb">
-        <Editable value={c.collateralTitle} onChange={v => set("collateralTitle", v)} tag="h2"
+      {/* ── BOOTH MATERIALS ── */}
+      <Section id="boothmaterials" bg="#f9fafb">
+        <Editable value={c.boothMaterialsTitle} onChange={v => set("boothMaterialsTitle", v)} tag="h2"
           style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }} />
-        <Editable value={c.collateralDescription} onChange={v => set("collateralDescription", v)} tag="p"
+        <Editable value={c.boothMaterialsDescription} onChange={v => set("boothMaterialsDescription", v)} tag="p"
           style={{ color: "#6b7280", marginBottom: 32, maxWidth: 680 }} multiline />
 
         <div className="collateral-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
-          {c.collateralItems.map((item, i) => (
+          {c.boothMaterialsItems.map((item, i) => (
             <Card key={i}>
               <div style={{ aspectRatio: "1/1.4", overflow: "hidden", background: "#f3f4f6" }}>
-                <img src={item.src} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src={item.src} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
               </div>
               <div style={{ padding: "14px 16px" }}>
-                <Editable value={item.title} onChange={v => setArr("collateralItems", i, "title", v)} tag="h4"
+                <Editable value={item.title} onChange={v => setArr("boothMaterialsItems", i, "title", v)} tag="h4"
                   style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-                <Editable value={item.description} onChange={v => setArr("collateralItems", i, "description", v)} tag="p"
-                  style={{ fontSize: 13, color: "#6b7280" }} />
+                <Editable value={item.description} onChange={v => setArr("boothMaterialsItems", i, "description", v)} tag="p"
+                  style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.6 }} multiline />
               </div>
             </Card>
           ))}
@@ -489,7 +524,7 @@ export default function App() {
 
         {/* Tabs */}
         <div style={{ borderBottom: "1px solid #e5e7eb", marginBottom: 28, display: "flex", gap: 0 }}>
-          {[["banners", "Posters"], ["digital", "Digital Screens"]].map(([key, label]) => (
+          {[["items", "Items at Booth"], ["supporting", "Supporting Visual Elements"]].map(([key, label]) => (
             <button key={key} onClick={() => setActiveTab(key)} className="tab-label"
               style={{ padding: "10px 20px", border: "none", background: "none", cursor: "pointer", fontSize: 14, fontWeight: activeTab === key ? 600 : 400, color: activeTab === key ? O : "#6b7280", borderBottom: activeTab === key ? `2px solid ${O}` : "2px solid transparent", marginBottom: -1, transition: "all 0.15s" }}>
               {label}
@@ -497,70 +532,43 @@ export default function App() {
           ))}
         </div>
 
-        {activeTab === "banners" && (
+        {activeTab === "items" && (
           <div>
-            <p style={{ color: "#6b7280", fontSize: 14, marginBottom: 24, maxWidth: 680 }}>{c.postersDescription}</p>
-          <div className="poster-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
-            <Card>
-              <div style={{ padding: 20 }}>
-                <Editable value={c.verticalBannerTitle} onChange={v => set("verticalBannerTitle", v)} tag="h3"
-                  style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-                <Editable value={c.verticalBannerDescription} onChange={v => set("verticalBannerDescription", v)} tag="p"
-                  style={{ fontSize: 13, color: "#6b7280", marginBottom: 16 }} />
-                <img src={c.verticalBannerSrc} alt="Vertical Banner" style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
-                <Editable value={c.verticalBannerText} onChange={v => set("verticalBannerText", v)} tag="p"
-                  style={{ fontSize: 13, color: "#6b7280" }} />
-              </div>
-            </Card>
-            <Card>
-              <div style={{ padding: 20 }}>
-                <Editable value={c.horizontalBannerTitle} onChange={v => set("horizontalBannerTitle", v)} tag="h3"
-                  style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-                <Editable value={c.horizontalBannerDescription} onChange={v => set("horizontalBannerDescription", v)} tag="p"
-                  style={{ fontSize: 13, color: "#6b7280", marginBottom: 16 }} />
-                <img src={c.horizontalBannerSrc} alt="Vertical INTUI Posters" style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
-                <Editable value={c.horizontalBannerText} onChange={v => set("horizontalBannerText", v)} tag="p"
-                  style={{ fontSize: 13, color: "#6b7280" }} />
-              </div>
-            </Card>
-          </div>
-          </div>
-        )}
-
-        {activeTab === "digital" && (
-          <Card>
-            <div style={{ padding: 24 }}>
-              <Editable value={c.digitalScreenTitle} onChange={v => set("digitalScreenTitle", v)} tag="h3"
-                style={{ fontWeight: 600, color: DARK, marginBottom: 4 }} />
-              <Editable value={c.digitalScreenDescription} onChange={v => set("digitalScreenDescription", v)} tag="p"
-                style={{ fontSize: 13, color: "#6b7280", marginBottom: 20 }} />
-              <div style={{ aspectRatio: "16/9", background: DARK, borderRadius: 10, overflow: "hidden", marginBottom: 20 }}>
-                <div style={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 32, color: "#fff" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                    <div style={{ width: 44, height: 44, background: O, borderRadius: 8 }} />
-                    <span style={{ background: "#fff", color: DARK, fontSize: 12, fontWeight: 600, borderRadius: 12, padding: "4px 12px" }}>Live Demo</span>
+            <p style={{ color: "#6b7280", fontSize: 14, marginBottom: 24, maxWidth: 680 }}>{c.itemsAtBoothDescription}</p>
+            <div className="poster-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+              {c.itemsAtBoothCards.map((item, i) => (
+                <Card key={i}>
+                  <div style={{ padding: 20 }}>
+                    <Editable value={item.title} onChange={v => setArr("itemsAtBoothCards", i, "title", v)} tag="h3"
+                      style={{ fontWeight: 600, color: DARK, marginBottom: 8 }} />
+                    <img src={item.src} alt={item.title} style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
+                    <Editable value={item.description} onChange={v => setArr("itemsAtBoothCards", i, "description", v)} tag="p"
+                      style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.6 }} multiline />
                   </div>
-                  <div>
-                    <Editable value={c.digitalScreenHeading} onChange={v => set("digitalScreenHeading", v)} tag="h4"
-                      style={{ fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 6 }} />
-                    <Editable value={c.digitalScreenSubtext} onChange={v => set("digitalScreenSubtext", v)} tag="p"
-                      style={{ fontSize: 14, color: "#d1d5db" }} />
-                  </div>
-                </div>
-              </div>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-                {c.digitalScreenGuidelines.map((g, i) => (
-                  <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                    <div style={{ width: 6, height: 6, borderRadius: "50%", background: O, marginTop: 6, flexShrink: 0 }} />
-                    <Editable value={g} onChange={v => setC(prev => ({ ...prev, digitalScreenGuidelines: prev.digitalScreenGuidelines.map((x, j) => j === i ? v : x) }))} tag="span"
-                      style={{ fontSize: 14, color: "#6b7280" }} />
-                  </li>
-                ))}
-              </ul>
+                </Card>
+              ))}
             </div>
-          </Card>
+          </div>
         )}
 
+        {activeTab === "supporting" && (
+          <div>
+            <p style={{ color: "#6b7280", fontSize: 14, marginBottom: 24, maxWidth: 680 }}>{c.supportingVisualsDescription}</p>
+            <div className="poster-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+              {c.supportingVisualsCards.map((item, i) => (
+                <Card key={i}>
+                  <div style={{ padding: 20 }}>
+                    <Editable value={item.title} onChange={v => setArr("supportingVisualsCards", i, "title", v)} tag="h3"
+                      style={{ fontWeight: 600, color: DARK, marginBottom: 8 }} />
+                    <img src={item.src} alt={item.title} style={{ width: "100%", maxHeight: 400, objectFit: "contain", borderRadius: 8, marginBottom: 12, background: "#f3f4f6" }} />
+                    <Editable value={item.description} onChange={v => setArr("supportingVisualsCards", i, "description", v)} tag="p"
+                      style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.6 }} multiline />
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        )}
       </Section>
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
