@@ -32,7 +32,7 @@ const CONTENT = {
   section2Title: "Objectives of the Booth",
   section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage with our team. Demonstrations, clinical evidence, and educational materials should be presented clearly, helping visitors understand how Medistim supports improved surgical outcomes.",
 
-  overviewNote: "NOTE: All trade shows must be preapproved through Marketing before commitments are made, to ensure proper resources and budgets are allocated.",
+  overviewNote: "NOTE: All booth designs must be preapproved through Marketing before commitments are made.",
 
   // Booth Design
   boothTitle: "Examples of Booth Designs and Layout",
@@ -62,7 +62,7 @@ const CONTENT = {
 
   // Booth Materials
   boothMaterialsTitle: "Booth Materials",
-  boothMaterialsDescription: "Reduce printed literature to a minimum. Guidebooks should always be available, and QR code posters should give visitors easy access to supporting materials.",
+  boothMaterialsDescription: "As part of our efforts to reduce the amount of printed materials at the booth, we have created posters with QR codes that provide easy access to all marketing materials. Guidebooks, however, should always be available in printed form at the booth. We recommend ordering a minimum of 20 copies per congress.",
 
   boothMaterialsItems: [
     {
