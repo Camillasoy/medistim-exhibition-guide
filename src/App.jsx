@@ -15,7 +15,7 @@ const CONTENT = {
   // Hero
   heroBadge: "Version 1.0.0",
   heroTitle: "Medistim Exhibition & Congress Guide",
-  heroDate: "Updated June 2026",
+  heroDate: "Published June 2026",
   heroDescription: "This guide aims to ensure a unified Medistim brand experience for all events and congresses",
 
   // Hero carousel swap src for any image URL
@@ -197,7 +197,7 @@ const CONTENT = {
 
   // Footer
   footerTitle: "Exhibition & Congress Guide",
-  footerVersion: "Version 1.0.0 – Updated June 2026",
+  footerVersion: "Version 1.0.0 – Published June 2026",
   footerContact: "For questions or support, contact the Marketing Team at marketing@medistim.com",
 };
 
@@ -437,6 +437,15 @@ export default function App() {
               </div>
             </Card>
           ))}
+        </div>
+
+        {/* DASH button */}
+        <div style={{ textAlign: "center", margin: "32px 0 8px" }}>
+          <a href="https://medistim.dash.app/browse/panels?keywords=&from=0&sort=7fef8ce2-c08a-475e-ba5c-b9fd3839f179:ASC&browse-filter-f15b56f0-7fb2-41c1-81e9-d7430fdbbb34=fd9c22ba-d2f9-49d4-b2e3-272030b6cc10&withAi=true"
+            target="_blank" rel="noopener noreferrer"
+            style={{ display: "inline-flex", alignItems: "center", gap: 10, background: O, color: "#fff", borderRadius: 8, padding: "12px 28px", fontSize: 15, fontWeight: 600, textDecoration: "none" }}>
+            Explore options on DASH
+          </a>
         </div>
 
         {/* Do's and Don'ts */}
