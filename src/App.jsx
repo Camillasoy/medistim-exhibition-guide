@@ -424,7 +424,7 @@ export default function App() {
           {c.boothCards.map((bc, i) => (
             <Card key={i}>
               <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden" }}>
-                <img src={bc.src} alt={bc.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src={bc.src} alt={bc.alt} className="zoom-img" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                 <span style={{ position: "absolute", top: 12, left: 12, background: bc.badgeColor, color: "#fff", fontSize: 11, fontWeight: 600, borderRadius: 12, padding: "3px 10px" }}>
                   <Editable value={bc.badge} onChange={v => setArr("boothCards", i, "badge", v)} />
                 </span>
@@ -573,7 +573,7 @@ export default function App() {
           {c.merchandiseItems.map((item, i) => (
             <Card key={i}>
               <div style={{ aspectRatio: "1/1", overflow: "hidden", background: "#f3f4f6" }}>
-                <img src={item.src} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src={item.src} alt={item.title} className="zoom-img" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px", textAlign: "center" }}>
                 <Editable value={item.title} onChange={v => setArr("merchandiseItems", i, "title", v)} tag="p"
@@ -720,6 +720,13 @@ export default function App() {
 
       <style>{`
         * { box-sizing: border-box; }
+
+        .zoom-img {
+          transition: transform 0.4s ease;
+        }
+        .zoom-img:hover {
+          transform: scale(1.05);
+        }
 
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
