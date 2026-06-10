@@ -700,58 +700,36 @@ export default function App() {
 
       <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
 
-      {/* ── CHECKLIST ── */}
+      {/* ── CHECKLIST + REQUEST FORM ── */}
       <Section id="checklist">
-        <div style={{ maxWidth: 640, margin: "0 auto" }}>
-          <Editable value={c.checklistTitle} onChange={v => set("checklistTitle", v)} tag="h2"
-            style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }} />
-          <Editable value={c.checklistDescription} onChange={v => set("checklistDescription", v)} tag="p"
-            style={{ color: "#6b7280", marginBottom: 24 }} multiline />
+        <div className="checklist-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, alignItems: "start" }}>
 
-          <div style={{ marginBottom: 32 }}>
-            <a href={c.checklistPdfUrl} target="_blank" rel="noopener noreferrer"
-              style={{ display: "inline-flex", alignItems: "center", gap: 8, background: O, color: "#fff", borderRadius: 8, padding: "12px 24px", fontSize: 14, fontWeight: 500, textDecoration: "none" }}>
-              <span>⬇</span> Download Checklist PDF
-            </a>
-          </div>
-
-          <Card style={{ border: allChecked ? `2px solid ${O}` : "1px solid #e5e7eb", background: allChecked ? "#fff8f4" : "#fff" }}>
-            <div style={{ padding: 28, display: "flex", flexDirection: "column", gap: 0 }}>
-              {c.checklistItems.map((item, i) => (
-                <div key={item.key}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "14px 0" }}>
-                    <button onClick={() => setChecklist(prev => ({ ...prev, [item.key]: !prev[item.key] }))}
-                      style={{ width: 22, height: 22, borderRadius: 5, border: `2px solid ${checklist[item.key] ? O : "#d1d5db"}`, background: checklist[item.key] ? O : "#fff", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, transition: "all 0.15s" }}>
-                      {checklist[item.key] && <span style={{ color: "#fff", fontSize: 13, lineHeight: 1 }}>✓</span>}
-                    </button>
-                    <Editable value={item.label} onChange={v => setC(prev => ({ ...prev, checklistItems: prev.checklistItems.map((ci, j) => j === i ? { ...ci, label: v } : ci) }))} tag="span"
-                      style={{ fontSize: 15, color: checklist[item.key] ? "#9ca3af" : "#374151", textDecoration: checklist[item.key] ? "line-through" : "none" }} />
-                  </div>
-                  {i < c.checklistItems.length - 1 && <hr style={{ border: "none", borderTop: "1px solid #f3f4f6", margin: 0 }} />}
-                </div>
-              ))}
-
-              {allChecked && (
-                <div style={{ marginTop: 20, background: O, borderRadius: 10, padding: 20, textAlign: "center", color: "#fff" }}>
-                  <div style={{ fontSize: 28, marginBottom: 6 }}>✓</div>
-                  <Editable value={c.checklistComplete} onChange={v => set("checklistComplete", v)} tag="p"
-                    style={{ margin: 0, fontWeight: 500 }} />
-                </div>
-              )}
+          {/* Checklist card */}
+          <Card style={{ border: "1px solid #e5e7eb" }}>
+            <div style={{ padding: 28 }}>
+              <Editable value={c.checklistTitle} onChange={v => set("checklistTitle", v)} tag="h2"
+                style={{ fontSize: 20, fontWeight: 700, marginBottom: 8, color: DARK }} />
+              <Editable value={c.checklistDescription} onChange={v => set("checklistDescription", v)} tag="p"
+                style={{ color: "#6b7280", marginBottom: 24, fontSize: 14, lineHeight: 1.6 }} multiline />
+              <a href={c.checklistPdfUrl} target="_blank" rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", gap: 8, background: O, color: "#fff", borderRadius: 8, padding: "10px 20px", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
+                <span>⬇</span> Download Checklist PDF
+              </a>
             </div>
           </Card>
-        </div>
-      </Section>
 
-      {/* ── REQUEST FORM ── */}
-      <Section>
-        <div style={{ maxWidth: 640, margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8, color: DARK }}>{c.requestFormTitle}</h2>
-          <p style={{ color: "#6b7280", marginBottom: 28, lineHeight: 1.6 }}>{c.requestFormDescription}</p>
-          <a href={c.requestFormUrl} target="_blank" rel="noopener noreferrer"
-            style={{ display: "inline-flex", alignItems: "center", gap: 10, background: O, color: "#fff", borderRadius: 8, padding: "14px 28px", fontSize: 15, fontWeight: 600, textDecoration: "none" }}>
-            <span>📋</span> {c.requestFormButtonLabel}
-          </a>
+          {/* Request form card */}
+          <Card style={{ border: "1px solid #e5e7eb" }}>
+            <div style={{ padding: 28 }}>
+              <h2 style={{ fontSize: 20, fontWeight: 700, marginBottom: 8, color: DARK }}>{c.requestFormTitle}</h2>
+              <p style={{ color: "#6b7280", marginBottom: 28, fontSize: 14, lineHeight: 1.6 }}>{c.requestFormDescription}</p>
+              <a href={c.requestFormUrl} target="_blank" rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", gap: 10, background: O, color: "#fff", borderRadius: 8, padding: "10px 20px", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
+                <span>📋</span> {c.requestFormButtonLabel}
+              </a>
+            </div>
+          </Card>
+
         </div>
       </Section>
 
@@ -789,6 +767,7 @@ export default function App() {
           .dos-grid { grid-template-columns: 1fr !important; }
           .booth-grid { grid-template-columns: 1fr !important; }
           .collateral-grid { grid-template-columns: 1fr !important; }
+          .checklist-grid { grid-template-columns: 1fr !important; }
           .merch-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .poster-grid { grid-template-columns: 1fr !important; }
           .section-title { font-size: 22px !important; }
