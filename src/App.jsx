@@ -204,7 +204,7 @@ const CONTENT = {
 // ============================================================
 // Inline editable text — click to edit, blur/Enter to save
 // ============================================================
-function Editable({ value, onChange, tag: Tag = "span", className = "", multiline = false }) {
+function Editable({ value, onChange, tag: Tag = "span", className = "", multiline = false, style: styleProp = {} }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(value);
   const ref = useRef(null);
@@ -232,7 +232,7 @@ function Editable({ value, onChange, tag: Tag = "span", className = "", multilin
       className={className}
       onClick={() => setEditing(true)}
       title="Click to edit"
-      style={{ cursor: "text", borderRadius: 3, transition: "background 0.15s" }}
+      style={{ cursor: "text", borderRadius: 3, transition: "background 0.15s", ...styleProp }}
       onMouseEnter={e => e.currentTarget.style.background = "rgba(243,108,33,0.07)"}
       onMouseLeave={e => e.currentTarget.style.background = ""}
     >
