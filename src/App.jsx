@@ -631,19 +631,6 @@ export default function App() {
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>
-            <div style={{ padding: 24 }}>
-              <Editable value={c.engagementTitle} onChange={v => set("engagementTitle", v)} tag="h4"
-                style={{ fontWeight: 600, color: DARK, marginBottom: 14 }} />
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-                {c.engagementPoints.map((pt, i) => (
-                  <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                    <div style={{ width: 6, height: 6, borderRadius: "50%", background: O, marginTop: 7, flexShrink: 0 }} />
-                    <Editable value={pt} onChange={v => setC(prev => ({ ...prev, engagementPoints: prev.engagementPoints.map((x, j) => j === i ? v : x) }))} tag="span"
-                      style={{ fontSize: 14, color: "#6b7280" }} />
-                  </li>
-                ))}
-              </ul>
-            </div>
           </Card>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
