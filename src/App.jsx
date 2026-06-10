@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 // ============================================================
-// CONTENT — edit all text and image URLs here
+// CONTENT edit all text and image URLs here
 // ============================================================
 const CONTENT = {
   // Header
@@ -18,7 +18,7 @@ const CONTENT = {
   heroDate: "Updated June 2026",
   heroDescription: "This guide aims to ensure a unified Medistim brand experience for all events and congresses",
 
-  // Hero carousel — swap src for any image URL
+  // Hero carousel swap src for any image URL
   carouselSlides: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780058868/P1130923_njgsfc.jpg", alt: "Medical Conference Booth" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780058218/EACTS_2025_esucie.jpg", alt: "Exhibition Hall" },
@@ -27,7 +27,7 @@ const CONTENT = {
 
   // Overview
   section1Title: "Exhibition Objectives",
-  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand and market leadership. Consistent booth design, messaging, and presentation ensure a recognizable brand experience at every event — strengthening our reputation and reinforcing our position as a trusted partner for surgeons and healthcare providers worldwide.",
+  section1Description: "Congresses and exhibitions are among Medistim's most valuable opportunities to showcase our brand and market leadership. Consistent booth design, messaging, and presentation ensure a recognizable brand experience at every event strengthening our reputation and reinforcing our position as a trusted partner for surgeons and healthcare providers worldwide.",
 
   section2Title: "Objectives of the Booth",
   section2Description: "The booth should provide an open, welcoming environment where visitors can learn about Medistim's solutions and engage with our team. Demonstrations, clinical evidence, and educational materials should be presented clearly, helping visitors understand how Medistim supports improved surgical outcomes.",
@@ -39,10 +39,10 @@ const CONTENT = {
   boothCards: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780061341/Image_9_zjpjat.jpg", alt: "Booth Front View", badge: "Vascular Congress 2026", badgeColor: "#1e6765", title: "Vascular Congress 2026", description: "A 3×2 m shell scheme booth with the Eye graphic backwall, used at the Charing Cross (CX) meeting. The vascular leg simulator was used to demonstrate flow measurement, creating an interactive experience for visitors." },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563679/Mockup_Vascular_Backwall_and_2_rollups-for_VAM_pybdnl.png", alt: "Floor Plan Layout", badge: "Vascular", badgeColor: "#1e6765", title: "Layout example 3x3m", description: "A standard 3×3 m configuration with a large backwall and two rollups. Where space is limited, two rollups and a counter provide a practical alternative with consistent branding." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571081/Mockup_2_Rollups_Vascular_-_Medium_wylb0c.png", alt: "Booth Side View", badge: "Vascular", badgeColor: "#1e6765", title: "Small booth setup", description: "For small booths and tabletop exhibits, use two vascular rollups and a branded counter. Avoid standard tables with tablecloths — a counter setup delivers a cleaner, more professional presentation." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780571081/Mockup_2_Rollups_Vascular_-_Medium_wylb0c.png", alt: "Booth Side View", badge: "Vascular", badgeColor: "#1e6765", title: "Small booth setup", description: "For small booths and tabletop exhibits, use two vascular rollups and a branded counter. Avoid standard tables with tablecloths a counter setup delivers a cleaner, more professional presentation." },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780560015/PHOTO-Cardiac_booth_example_diipsl.jpg", alt: "Cardiac Congress 2025", badge: "Cardiac Congress 2025", badgeColor: "#f36c21", title: "Cardiac Congress 2025", description: "A 3×2 m open-space island booth with the Heart graphic, used at ISMICS Turkey 2025. Demonstrates how strong branding creates an impactful presence within a compact footprint." },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780563779/Mockup_Cardiac_Backwall_-_1_rollup_and_1_Screen_fxkmiq.png", alt: "Booth Configuration", badge: "Cardiac", badgeColor: "#F36C21", title: "Layout example", description: "A 3×3 m setup with one rollup and a screen running a continuous video loop. Static branding combined with dynamic content helps attract visitors while maintaining a clean presentation." },
-    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780661408/Cardiac_mockup_2_rollups_and_counter_namnai.png", alt: "Exhibition Layout", badge: "Cardiac", badgeColor: "#f36c21", title: "Small booth setup", description: "A compact cardiac setup with two rollups and a branded counter. Avoid tablecloths — a counter-based layout is cleaner, more consistent, and makes better use of limited space." },
+    { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780661408/Cardiac_mockup_2_rollups_and_counter_namnai.png", alt: "Exhibition Layout", badge: "Cardiac", badgeColor: "#f36c21", title: "Small booth setup", description: "A compact cardiac setup with two rollups and a branded counter. Avoid tablecloths a counter-based layout is cleaner, more consistent, and makes better use of limited space." },
   ],
   boothDosTitle: "Booth Presentation Standards",
   boothDos: [
@@ -91,16 +91,16 @@ const CONTENT = {
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780053462/Magazine_Mockup_03-Remake_lj4p57.png",
       title: "Guidebooks",
-      description: "Always available at the booth — minimum 20 copies per congress recommended. Order printed copies through the Medistim webshop as part of event preparation."
+      description: "Always available at the booth minimum 20 copies per congress recommended. Order printed copies through the Medistim webshop as part of event preparation."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages — contact Marketing for customization."
+      description: "A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages contact Marketing for customization."
     },
     {
       title: "Other Promotional Posters and Flyers",
-      description: "INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. A5 flyers let visitors scan a QR code to access information after the event. Additional flyers can be developed for specific campaigns — contact Marketing.",
+      description: "INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. A5 flyers let visitors scan a QR code to access information after the event. Additional flyers can be developed for specific campaigns contact Marketing.",
       slides: [
         "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
@@ -135,7 +135,7 @@ const CONTENT = {
 
   // Merchandise
   merchandiseTitle: "Giveaways & Merchandise",
-  merchandiseDescription: "Display merchandise in a tidy, uncluttered manner. Use pen holders, arrange cloths in neat groups, and present sweets in a clean bowl — never scattered loosely.",
+  merchandiseDescription: "Display merchandise in a tidy, uncluttered manner. Use pen holders, arrange cloths in neat groups, and present sweets in a clean bowl never scattered loosely.",
   merchandiseItems: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780055048/Shopper_with_Logo_rqs5ww.jpg", title: "Canvas Tote Bag", description: "Natural cotton with logo" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780054815/Medistim_Pen_tlvewq.png", title: "Premium Pen", description: "Medistim orange pen from Prodir" },
@@ -202,40 +202,11 @@ const CONTENT = {
 };
 
 // ============================================================
-// Inline editable text — click to edit, blur/Enter to save
+// Inline editable text click to edit, blur/Enter to save
 // ============================================================
-function Editable({ value, onChange, tag: Tag = "span", className = "", multiline = false, style: styleProp = {} }) {
-  const [editing, setEditing] = useState(false);
-  const [draft, setDraft] = useState(value);
-  const ref = useRef(null);
-
-  useEffect(() => { setDraft(value); }, [value]);
-  useEffect(() => { if (editing && ref.current) ref.current.focus(); }, [editing]);
-
-  const commit = () => { setEditing(false); if (draft !== value) onChange(draft); };
-
-  if (editing) {
-    const shared = {
-      ref,
-      value: draft,
-      onChange: e => setDraft(e.target.value),
-      onBlur: commit,
-      style: { width: "100%", background: "rgba(243,108,33,0.08)", border: "1.5px solid #F36C21", borderRadius: 4, padding: "2px 6px", font: "inherit", color: "inherit", outline: "none", resize: multiline ? "vertical" : "none" },
-    };
-    return multiline
-      ? <textarea {...shared} rows={3} onKeyDown={e => e.key === "Escape" && commit()} />
-      : <input {...shared} onKeyDown={e => (e.key === "Enter" || e.key === "Escape") && commit()} />;
-  }
-
+function Editable({ value, tag: Tag = "span", className = "", style: styleProp = {} }) {
   return (
-    <Tag
-      className={className}
-      onClick={() => setEditing(true)}
-      title="Click to edit"
-      style={{ cursor: "text", borderRadius: 3, transition: "background 0.15s", ...styleProp }}
-      onMouseEnter={e => e.currentTarget.style.background = "rgba(243,108,33,0.07)"}
-      onMouseLeave={e => e.currentTarget.style.background = ""}
-    >
+    <Tag className={className} style={{ ...styleProp }}>
       {value}
     </Tag>
   );
