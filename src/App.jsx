@@ -109,7 +109,7 @@ const CONTENT = {
     },
   ],
 
-  supportingVisualsDescription: "Visual assets used to support booth branding and presentation.",
+  supportingVisualsDescription: "",
   supportingVisualsCards: [
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780653300/Skjermbilde_2026-02-16_151746_xpryc7.png",
@@ -681,13 +681,13 @@ export default function App() {
 
             <Card>
               <div style={{ padding: 24 }}>
-                <Editable value={c.professionalAppearanceTitle} onChange={v => set("professionalAppearanceTitle", v)} tag="h4"
+                <Editable value={c.engagementTitle} onChange={v => set("engagementTitle", v)} tag="h4"
                   style={{ fontWeight: 600, color: DARK, marginBottom: 12 }} />
                 <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-                  {c.professionalAppearancePoints.map((pt, i) => (
+                  {c.engagementPoints.map((pt, i) => (
                     <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
                       <div style={{ width: 6, height: 6, borderRadius: "50%", background: O, marginTop: 7, flexShrink: 0 }} />
-                      <Editable value={pt} onChange={v => setC(prev => ({ ...prev, professionalAppearancePoints: prev.professionalAppearancePoints.map((x, j) => j === i ? v : x) }))} tag="span"
+                      <Editable value={pt} onChange={v => setC(prev => ({ ...prev, engagementPoints: prev.engagementPoints.map((x, j) => j === i ? v : x) }))} tag="span"
                         style={{ fontSize: 14, color: "#6b7280" }} />
                     </li>
                   ))}
