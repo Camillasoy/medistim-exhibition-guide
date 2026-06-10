@@ -409,16 +409,16 @@ export default function App() {
       </header>
 
       {/* ── HERO ── */}
-      <section className="hero-section" style={{ background: "#f9fafb", padding: "72px 24px 64px", textAlign: "center" }}>
+      <section className="hero-section" style={{ background: DARK, padding: "72px 24px 64px", textAlign: "center" }}>
         <span style={{ display: "inline-block", background: O, color: "#fff", fontSize: 12, fontWeight: 600, borderRadius: 20, padding: "4px 14px", marginBottom: 16 }}>
           <Editable value={c.heroBadge} onChange={v => set("heroBadge", v)} />
         </span>
         <Editable value={c.heroTitle} onChange={v => set("heroTitle", v)} tag="h1" className="hero-title"
-          style={{ fontSize: 40, fontWeight: 700, color: DARK, marginBottom: 12 }} />
+          style={{ fontSize: 40, fontWeight: 700, color: "#ffffff", marginBottom: 12 }} />
         <Editable value={c.heroDate} onChange={v => set("heroDate", v)} tag="p"
-          style={{ color: "#6b7280", marginBottom: 8 }} />
+          style={{ color: "#c4a89a", marginBottom: 8 }} />
         <Editable value={c.heroDescription} onChange={v => set("heroDescription", v)} tag="p"
-          style={{ color: "#374151", maxWidth: 560, margin: "0 auto" }} />
+          style={{ color: "#c4a89a", maxWidth: 560, margin: "0 auto" }} />
       </section>
 
       {/* ── CAROUSEL ── */}
