@@ -178,8 +178,8 @@ const CONTENT = {
 
   // Checklist
   checklistTitle: "Pre-Event Checklist",
-  checklistDescription: "Use this checklist to plan and prepare for upcoming congresses and exhibitions. It covers the key activities required to ensure that booth graphics, marketing materials, demonstration equipment, logistics, and staffing are ready on time. Early planning and coordination with Marketing help ensure a professional booth presence, avoid last-minute issues, and maximize the value of our participation at each event.",
-  checklistPdfUrl: "https://link.assetfile.io/6wKz4IBzh4pBJzj0P48EKE/Medistim_Pre_Event_Checklist+%281%29.pdf",
+  checklistDescription: "Early planning and coordination with Marketing help ensure a professional booth presence, avoid last-minute issues, and maximize the value of our participation at each event.",
+  checklistPdfUrl: "https://link.assetfile.io/3jUqY8cu3f4YzzlFQApFrW/Congress+and+Exhibition+Checklist.pdf",
   checklistItems: [
     { key: "graphics",   label: "Booth graphics printed and packed" },
     { key: "demo",       label: "Demo equipment tested and ready" },
@@ -708,7 +708,7 @@ export default function App() {
           <Card style={{ border: "1px solid #e5e7eb" }}>
             <div style={{ padding: 28 }}>
               <Editable value={c.checklistTitle} onChange={v => set("checklistTitle", v)} tag="h2"
-                style={{ fontSize: 20, fontWeight: 700, marginBottom: 8, color: DARK }} />
+                style={{ fontSize: 20, fontWeight: 700, marginBottom: 8, color: DARK, display: "block" }} />
               <Editable value={c.checklistDescription} onChange={v => set("checklistDescription", v)} tag="p"
                 style={{ color: "#6b7280", marginBottom: 24, fontSize: 14, lineHeight: 1.6 }} multiline />
               <a href={c.checklistPdfUrl} target="_blank" rel="noopener noreferrer"
