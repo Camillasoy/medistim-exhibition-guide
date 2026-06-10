@@ -73,7 +73,7 @@ const CONTENT = {
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "These posters with QR codes link visitors to marketing materials, reducing the need for printed brochures. Available in Cardiac, Vascular and Transplant versions."
+      description: "These posters with QR codes link visitors to marketing materials, reducing the need for printed brochures. Available in Cardiac, Vascular, and Transplant versions."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
@@ -84,7 +84,7 @@ const CONTENT = {
 
   // Visual Elements (renamed tabs)
   visualTitle: "Booth Materials",
-  visualDescription: "Consistent use of approved guidebooks, posters, and supporting materials creates a professional brand experience and ensures visitors have easy access to relevant product information.",
+  visualDescription: "As part of our efforts to reduce the amount of printed materials at the booth, we have created posters with QR codes that provide easy access to all marketing materials. Guidebooks, however, should always be available in printed form at the booth. We recommend ordering a minimum of 20 copies per congress.",
 
   itemsAtBoothDescription: "",
   itemsAtBoothCards: [
@@ -96,11 +96,11 @@ const CONTENT = {
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages contact Marketing for customization."
+      description: "These posters are A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages contact Marketing for customization."
     },
     {
       title: "Other Promotional Posters and Flyers",
-      description: "INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. A5 flyers let visitors scan a QR code to access information after the event. Additional flyers can be developed for specific campaigns contact Marketing.",
+      description: "INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. A5 flyers let visitors scan a QR code to access information after the event. Additional flyers can be developed for specific campaigns.",
       slides: [
         "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
@@ -114,7 +114,7 @@ const CONTENT = {
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780653300/Skjermbilde_2026-02-16_151746_xpryc7.png",
       title: "FlowPhantom",
-      description: "The Medistim Flow Phantom is a valuable booth tool for hands-on demonstrations of Transit Time Flow Measurement (TTFM). By simulating blood flow in a realistic and interactive way, it helps visitors better understand flow measurement principles and the clinical value of Medistim technology. Compact and easy to transport, the Flow Phantom is ideal for congresses, workshops, and training events where live demonstrations can help attract visitors and create meaningful discussions."
+      description: "The Medistim Flow Phantom is a valuable booth tool for hands-on demonstrations of Transit Time Flow Measurement (TTFM). Simulating blood flow realistically and interactively helps visitors better understand flow measurement principles and the clinical value of Medistim technology. Compact and easy to transport, the Flow Phantom is ideal for congresses, workshops, and training events where live demonstrations can help attract visitors and create meaningful discussions."
     },
     {
       src: "https://res.cloudinary.com/dranffioe/image/upload/v1780654298/Leg_simulator_2_duzufi.png",
@@ -135,7 +135,7 @@ const CONTENT = {
 
   // Merchandise
   merchandiseTitle: "Giveaways & Merchandise",
-  merchandiseDescription: "Display merchandise in a tidy, uncluttered manner. Use pen holders, arrange cloths in neat groups, and present sweets in a clean bowl never scattered loosely.",
+  merchandiseDescription: "Display merchandise in a tidy, uncluttered manner. Use pen holders, arrange cloths in neat groups. If bringing sweets, always present them in a clean bowl, never scattered loosely.",
   merchandiseItems: [
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780055048/Shopper_with_Logo_rqs5ww.jpg", title: "Canvas Tote Bag", description: "Natural cotton with logo" },
     { src: "https://res.cloudinary.com/dranffioe/image/upload/v1780054815/Medistim_Pen_tlvewq.png", title: "Premium Pen", description: "Medistim orange pen from Prodir" },
