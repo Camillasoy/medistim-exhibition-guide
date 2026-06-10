@@ -189,6 +189,12 @@ const CONTENT = {
   ],
   checklistComplete: "All items completed! Ready for the event.",
 
+  // Request Form
+  requestFormUrl: "https://form.123formbuilder.com/6961595/exhibition-congress-request-form",
+  requestFormTitle: "Exhibition & Congress Request",
+  requestFormDescription: "Planning to attend an upcoming congress or exhibition? Submit a request to the Marketing Team using the form below.",
+  requestFormButtonLabel: "Submit an Exhibition Request",
+
   // Footer
   footerTitle: "Exhibition & Congress Guide",
   footerVersion: "Version 1.0.0 – Updated June 2026",
@@ -736,6 +742,20 @@ export default function App() {
           </Card>
         </div>
       </Section>
+
+      {/* ── REQUEST FORM ── */}
+      <Section>
+        <div style={{ maxWidth: 640, margin: "0 auto", textAlign: "center" }}>
+          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8, color: DARK }}>{c.requestFormTitle}</h2>
+          <p style={{ color: "#6b7280", marginBottom: 28, lineHeight: 1.6 }}>{c.requestFormDescription}</p>
+          <a href={c.requestFormUrl} target="_blank" rel="noopener noreferrer"
+            style={{ display: "inline-flex", alignItems: "center", gap: 10, background: O, color: "#fff", borderRadius: 8, padding: "14px 28px", fontSize: 15, fontWeight: 600, textDecoration: "none" }}>
+            <span>📋</span> {c.requestFormButtonLabel}
+          </a>
+        </div>
+      </Section>
+
+      <hr style={{ border: "none", borderTop: "1px solid #e5e7eb" }} />
 
       {/* ── FOOTER ── */}
       <footer className="footer-padding" style={{ background: DARK, color: "#fff", padding: "48px 24px", textAlign: "center" }}>
