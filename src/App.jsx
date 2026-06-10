@@ -178,7 +178,7 @@ const CONTENT = {
 
   // Checklist
   checklistTitle: "Pre-Event Checklist",
-  checklistDescription: "Early planning and coordination with Marketing help ensure a professional booth presence, avoid last-minute issues, and maximize the value of our participation at each event.",
+  checklistDescription: "Use this checklist to plan and prepare for upcoming congresses and exhibitions. It covers the key activities required to ensure that booth graphics, marketing materials, demonstration equipment, logistics, and staffing are ready on time.",
   checklistPdfUrl: "https://link.assetfile.io/3jUqY8cu3f4YzzlFQApFrW/Congress+and+Exhibition+Checklist.pdf",
   checklistItems: [
     { key: "graphics",   label: "Booth graphics printed and packed" },
@@ -192,7 +192,7 @@ const CONTENT = {
   // Request Form
   requestFormUrl: "https://form.123formbuilder.com/6961595/exhibition-congress-request-form",
   requestFormTitle: "Exhibition & Congress Request",
-  requestFormDescription: "Planning to attend an upcoming congress or exhibition? Submit a request to the Marketing Team using the form below.",
+  requestFormDescription: "Need support for an upcoming congress or exhibition? Once you’ve identified your marketing needs, please complete the form below and the Marketing Team will get back to you.",
   requestFormButtonLabel: "Submit an Exhibition Request",
 
   // Footer
