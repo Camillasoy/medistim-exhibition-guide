@@ -94,9 +94,13 @@ const CONTENT = {
       description: "Always available at the booth minimum 20 copies per congress recommended. Order printed copies through the Medistim webshop as part of event preparation."
     },
     {
-      src: "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
       title: "Marketing Material Poster with QR Code",
-      description: "These posters are A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages contact Marketing for customization."
+      description: "These posters are A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages contact Marketing for customization.",
+      slides: [
+        "https://res.cloudinary.com/dranffioe/image/upload/v1781160410/INTUI_Flyer_in_hands_h1c3uh.png",
+        "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
+        "https://res.cloudinary.com/dranffioe/image/upload/v1781160549/Flyer_for_Brochures_qiki8z.jpg",
+      ]
     },
     {
       title: "Other Promotional Posters and Flyers",
