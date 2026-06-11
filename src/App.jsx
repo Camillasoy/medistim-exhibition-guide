@@ -94,21 +94,21 @@ const CONTENT = {
       description: "Always available at the booth minimum 20 copies per congress recommended. Order printed copies through the Medistim webshop as part of event preparation."
     },
     {
-      title: "Marketing Material Poster with QR Code",
-      description: "These posters are A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages contact Marketing for customization.",
+      title: "Posters with QR Code",
+      description: "These posters are A3-sized with a built-in easel back for counter or tabletop display. QR codes can be tailored to link to specific web pages. Contact Marketing for customization options.",
+      slides: [
+        "https://res.cloudinary.com/dranffioe/image/upload/v1780057091/Poster_mockup_Cardiac_azp2vc.png",
+        "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
+        "https://res.cloudinary.com/dranffioe/image/upload/v1781161250/Poster_w_QR_code_for_Vascular_Congresses_ckw4jt.jpg",
+      ]
+    },
+    {
+      title: "Flyers with QR Code",
+      description: "The flyers are A5-sized and let visitors scan a QR code to access information after the event. Additional flyers can be developed for specific campaigns.",
       slides: [
         "https://res.cloudinary.com/dranffioe/image/upload/v1781160410/INTUI_Flyer_in_hands_h1c3uh.png",
         "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
         "https://res.cloudinary.com/dranffioe/image/upload/v1781160549/Flyer_for_Brochures_qiki8z.jpg",
-      ]
-    },
-    {
-      title: "Other Promotional Posters and Flyers",
-      description: "INTUI promotional posters, an EduQ flyer, and a Guidebook flyer. A5 flyers let visitors scan a QR code to access information after the event. Additional flyers can be developed for specific campaigns.",
-      slides: [
-        "https://res.cloudinary.com/dranffioe/image/upload/v1780057650/Mockup_INTUI_Posters_tvz8ia.png",
-        "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_w_QR_Code_for_Guideoboks_yg4fmp.jpg",
-        "https://res.cloudinary.com/dranffioe/image/upload/v1780649481/Flyer_EduQ-2-pager_aygrrv.jpg",
       ]
     },
   ],
