@@ -384,10 +384,7 @@ export default function App() {
       </header>
 
       {/* ── HERO ── */}
-      <section className="hero-section" style={{ position: "relative", background: "#fff", padding: "72px 24px 64px", textAlign: "center" }}>
-        <img src="https://res.cloudinary.com/dranffioe/image/upload/v1781162145/Compass_icon_for_Engage_Community_jbcy8x.png"
-          alt="Compass icon" className="hero-icon"
-          style={{ position: "absolute", top: 24, left: 24, width: 56, height: 56, objectFit: "contain" }} />
+      <section className="hero-section" style={{ position: "relative", background: "#faf8f7", padding: "72px 24px 64px", textAlign: "center" }}>
         <span style={{ display: "inline-block", background: O, color: "#fff", fontSize: 12, fontWeight: 600, borderRadius: 20, padding: "4px 14px", marginBottom: 16 }}>
           <Editable value={c.heroBadge} onChange={v => set("heroBadge", v)} />
         </span>
@@ -397,6 +394,9 @@ export default function App() {
           style={{ color: DARK, opacity: 0.65, marginBottom: 8 }} />
         <Editable value={c.heroDescription} onChange={v => set("heroDescription", v)} tag="p"
           style={{ color: DARK, opacity: 0.65, maxWidth: 560, margin: "0 auto" }} />
+        <img src="https://res.cloudinary.com/dranffioe/image/upload/v1781162145/Compass_icon_for_Engage_Community_jbcy8x.png"
+          alt="Compass icon" className="hero-icon"
+          style={{ display: "block", margin: "28px auto 0", width: 56, height: 56, objectFit: "contain" }} />
       </section>
 
       {/* ── CAROUSEL ── */}
@@ -741,7 +741,7 @@ export default function App() {
           .team-grid { grid-template-columns: 1fr !important; }
           .hero-title { font-size: 26px !important; }
           .hero-section { padding: 40px 16px 32px !important; }
-          .hero-icon { width: 36px !important; height: 36px !important; top: 12px !important; left: 12px !important; }
+          .hero-icon { width: 44px !important; height: 44px !important; margin-top: 20px !important; }
           .section-padding { padding: 40px 16px !important; }
           .carousel-height { height: 240px !important; }
           .tab-label { font-size: 12px !important; padding: 8px 12px !important; }
