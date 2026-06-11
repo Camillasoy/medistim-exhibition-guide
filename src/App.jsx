@@ -15,7 +15,7 @@ const CONTENT = {
   // Hero
   heroBadge: "Version 1.0.0",
   heroTitle: "Medistim Exhibition & Congress Guide",
-  heroDate: "Published June 2026",
+  heroDate: "Updated June 2026",
   heroDescription: "This guide aims to ensure a unified Medistim brand experience for all events and congresses",
 
   // Hero carousel swap src for any image URL
@@ -197,7 +197,7 @@ const CONTENT = {
 
   // Footer
   footerTitle: "Exhibition & Congress Guide",
-  footerVersion: "Version 1.0.0 – Published June 2026",
+  footerVersion: "Version 1.0.0 – Updated June 2026",
   footerContact: "For questions or support, contact the Marketing Team at marketing@medistim.com",
 };
 
