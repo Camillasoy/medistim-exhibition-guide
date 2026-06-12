@@ -183,7 +183,7 @@ const CONTENT = {
   // Checklist
   checklistTitle: "Pre-Event Checklist",
   checklistDescription: "Use this checklist to plan and prepare for upcoming congresses and exhibitions. It covers the key activities required to ensure that booth graphics, marketing materials, demonstration equipment, logistics, and staffing are ready on time.",
-  checklistPdfUrl: "https://link.assetfile.io/3jUqY8cu3f4YzzlFQApFrW/Congress+and+Exhibition+Checklist.pdf",
+  checklistPdfUrl: "https://link.assetfile.io/6cJrDGa0x1d9WrpU9Gw09S/Pre+Event+Check+list.pdf",
   checklistItems: [
     { key: "graphics",   label: "Booth graphics printed and packed" },
     { key: "demo",       label: "Demo equipment tested and ready" },
