@@ -427,6 +427,24 @@ export default function App() {
         <Editable value={c.boothTitle} onChange={v => set("boothTitle", v)} tag="h2"
           style={{ fontSize: 28, fontWeight: 700, marginBottom: 32 }} />
 
+        {/* ── PULSING NOTIFICATION ── */}
+        <div className="booth-notice" style={{
+          display: "flex", alignItems: "flex-start", gap: 12,
+          background: "#fff8f4", border: "1.5px solid #F36C21",
+          borderRadius: 10, padding: "14px 20px", marginBottom: 28,
+          animation: "boothPulse 3s ease-in-out infinite"
+        }}>
+          <span style={{ fontSize: 18, flexShrink: 0, marginTop: 1 }}>🔔</span>
+          <p style={{ margin: 0, fontSize: 14, color: DARK, lineHeight: 1.65 }}>
+            <strong>We are currently developing new booth graphics.</strong>{" "}
+            If you are planning an upcoming congress, please contact{" "}
+            <a href="mailto:camilla.hauge@medistim.com" style={{ color: "#F36C21", fontWeight: 600, textDecoration: "none" }}>
+              camilla.hauge@medistim.com
+            </a>{" "}
+            and we will update the images below as soon as possible.
+          </p>
+        </div>
+
         <div className="booth-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, marginBottom: 32 }}>
           {c.boothCards.map((bc, i) => (
             <Card key={i}>
@@ -727,6 +745,11 @@ export default function App() {
 
       <style>{`
         * { box-sizing: border-box; }
+
+        @keyframes boothPulse {
+          0%, 100% { opacity: 1; border-color: #F36C21; }
+          50% { opacity: 0.55; border-color: #f9a872; }
+        }
 
         .zoom-img {
           transition: transform 0.4s ease;
